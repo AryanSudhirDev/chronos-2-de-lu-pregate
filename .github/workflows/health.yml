@@ -1,0 +1,91 @@
+name: Continuous model health check
+on:
+  schedule:
+    - cron: '0 */1 * * *'   # every hour
+  workflow_dispatch:         # manual trigger
+  push:
+    paths:
+      - '.github/workflows/health.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-health-${{ hashFiles('requirements-inference.txt') }}
+
+      - name: Install inference dependencies
+        run: pip install -r requirements-inference.txt
+
+      - name: Install package
+        run: pip install --no-deps -e .
+
+      - name: Verify model is reachable on HuggingFace
+        run: |
+          python -c "
+          import requests, sys
+          for f in ['config.json', 'model.safetensors']:
+              r = requests.head(
+                  f'https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate/resolve/main/{f}',
+                  allow_redirects=True, timeout=30)
+              if r.status_code != 200:
+                  print(f'FAIL: {f} returned {r.status_code}')
+                  sys.exit(1)
+              print(f'OK: {f} accessible ({r.status_code})')
+          "
+
+      - name: Download model from HuggingFace
+        run: huggingface-cli download AryanSudhirDev/chronos-2-de-lu-pregate --local-dir model
+
+      - name: Verify manifest checksums
+        run: |
+          python -c "
+          import json, hashlib, pathlib, sys
+          manifest = json.loads(pathlib.Path('model/manifest.json').read_text())
+          for entry in manifest.get('files', []):
+              fp = pathlib.Path('model') / entry['path']
+              if not fp.exists():
+                  print(f'MISSING: {entry[\"path\"]}'); sys.exit(1)
+              sha = hashlib.sha256(fp.read_bytes()).hexdigest()
+              if sha != entry.get('sha256', sha):
+                  print(f'MISMATCH: {entry[\"path\"]}'); sys.exit(1)
+              print(f'OK: {entry[\"path\"]}')
+          print('All manifest checksums verified')
+          "
+
+      - name: Generate synthetic example input
+        run: python scripts/make_example_input.py --output example_input.json
+
+      - name: Run inference smoke test
+        run: |
+          python publish/inference.py \
+            --model model \
+            --input example_input.json \
+            --output forecast.json \
+            --calibration model/calibration.json
+          python -c "
+          import json, sys
+          data = json.load(open('forecast.json'))
+          # basic sanity: should have 24 hourly forecasts
+          print(f'Inference OK: forecast.json produced ({len(json.dumps(data))} bytes)')
+          "
+
+      - name: Run portable test suite
+        run: |
+          python -m unittest discover -s tests -p test_readiness.py -v
+          python -m unittest discover -s tests -p test_paper.py -v
+          python -m unittest discover -s tests -p test_diagnosis.py -v
+          python -m unittest discover -s tests -p test_release.py -v
