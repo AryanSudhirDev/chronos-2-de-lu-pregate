@@ -13,7 +13,7 @@ permissions:
 jobs:
   health:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -25,13 +25,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-health-${{ hashFiles('requirements-inference.txt') }}
+          key: ${{ runner.os }}-health-${{ hashFiles('requirements-research.txt') }}
 
-      - name: Install inference dependencies
-        run: pip install -r requirements-inference.txt
-
-      - name: Install package
-        run: pip install --no-deps -e .
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-research.txt
+          pip install --no-deps -e .
 
       - name: Verify model is reachable on HuggingFace
         run: |
