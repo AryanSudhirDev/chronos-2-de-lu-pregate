@@ -36,15 +36,16 @@ jobs:
       - name: Verify model is reachable on HuggingFace
         run: |
           python -c "
-          import requests, sys
+          import urllib.request, sys
           for f in ['config.json', 'model.safetensors']:
-              r = requests.head(
-                  f'https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate/resolve/main/{f}',
-                  allow_redirects=True, timeout=30)
-              if r.status_code != 200:
-                  print(f'FAIL: {f} returned {r.status_code}')
+              url = f'https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate/resolve/main/{f}'
+              req = urllib.request.Request(url, method='HEAD')
+              try:
+                  resp = urllib.request.urlopen(req, timeout=30)
+                  print(f'OK: {f} accessible ({resp.status})')
+              except Exception as e:
+                  print(f'FAIL: {f} - {e}')
                   sys.exit(1)
-              print(f'OK: {f} accessible ({r.status_code})')
           "
 
       - name: Download model from HuggingFace
@@ -77,9 +78,8 @@ jobs:
             --output forecast.json \
             --calibration model/calibration.json
           python -c "
-          import json, sys
+          import json
           data = json.load(open('forecast.json'))
-          # basic sanity: should have 24 hourly forecasts
           print(f'Inference OK: forecast.json produced ({len(json.dumps(data))} bytes)')
           "
 
