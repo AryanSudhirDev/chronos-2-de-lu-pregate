@@ -61,15 +61,19 @@ jobs:
           python -c "
           import json, hashlib, pathlib, sys
           manifest = json.loads(pathlib.Path('model/manifest.json').read_text())
-          for entry in manifest.get('files', []):
-              fp = pathlib.Path('model') / entry['path']
+          files = manifest.get('files', {})
+          checked = 0
+          for fname, expected_sha in files.items():
+              fp = pathlib.Path('model') / fname
               if not fp.exists():
-                  print(f'MISSING: {entry[\"path\"]}'); sys.exit(1)
+                  print(f'MISSING: {fname}'); sys.exit(1)
               sha = hashlib.sha256(fp.read_bytes()).hexdigest()
-              if sha != entry.get('sha256', sha):
-                  print(f'MISMATCH: {entry[\"path\"]}'); sys.exit(1)
-              print(f'OK: {entry[\"path\"]}')
-          print('All manifest checksums verified')
+              if sha != expected_sha:
+                  print(f'MISMATCH: {fname} (expected {expected_sha[:12]}..., got {sha[:12]}...)')
+                  sys.exit(1)
+              checked += 1
+              print(f'OK: {fname}')
+          print(f'All {checked} manifest checksums verified')
           "
 
       - name: Generate synthetic example input
