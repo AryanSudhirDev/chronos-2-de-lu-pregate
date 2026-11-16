@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-10T01:45:00Z",
+  "scope": "new dev-only readiness study, historical holdout unchanged; future paper predictions separate",
+  "evaluate_start": "2025-07-01",
+  "evaluate_end": "2025-10-31",
+  "calibration_end": "2025-06-30",
+  "lora": "864e91aa35",
+  "lear_windows": [
+    56,
+    84,
+    728,
+    1092
+  ],
+  "lgbm": {
+    "objective": "l1",
+    "n_estimators": 1500,
+    "learning_rate": 0.03,
+    "num_leaves": 63,
+    "min_child_samples": 50,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.7,
+    "reg_lambda": 1.0,
+    "verbose": -1,
+    "n_jobs": 4
+  },
+  "primary": "MAE on common dev days; no tuning on original held-out outcomes",
+  "paper": "frozen pre-gate LoRA adapter from offline_chronos_vftxarhg; dev-only interval expansion; pre-gate LEAR/LightGBM references; immutable issues before D-1 noon Europe/Berlin"
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "One new dev-only adaptive challenger after the original holdout study; not another untouched test",
+  "architecture": "24 trainable hourly residual-bias weights on top of fixed pre-gate Chronos; core neural weights are unchanged",
+  "source_dev_forecasts": "864e91aa35",
+  "first_available_forecast": "2024-09-01",
+  "evaluate_start": "2025-07-01",
+  "evaluate_end": "2025-10-31",
+  "update": "After a delivery day's actual auction prices are available, update each bias with EWMA(actual minus original Chronos forecast); predict the next day using only prior errors",
+  "halflife_calendar_days": 30,
+  "initial_bias": "24 zeros before first source forecast; no outcomes used to initialize",
+  "missing_days": "No update without original forecast and complete actual target; decay bias toward zero with elapsed calendar time",
+  "decision_boundary": "Save adjusted forecast and the pre-update weights before releasing that day's target to the isolated adaptive worker",
+  "gpu_policy": "No Chronos training or GPU required for this first adaptation test",
+  "selection": "Single variant, no hyperparameter search; add as a separate prospective challenger only if dev MAE improves by at least 1 percent AND constrained margin after variable costs is not lower than unchanged Chronos on identical days",
+  "costs": "Reuse existing readiness Battery defaults; same annual fixed-cost scenarios apply to both models and cancel in their comparison",
+  "calibration": "Keep the existing original 80-percent interval expansion; if promoted shift original intervals by learned bias, label exploratory and do not claim coverage guarantee",
+  "forward": "Frozen original paper control and policy hashes remain unchanged. If gate passes, seed challenger from dev errors through 2025-10-31 only and then update from genuinely prospective, already-released paper outcomes under this fixed rule. Never use original holdout outcomes or tune on forward scores.",
+  "limitations": "This tests a lightweight learned calibration layer, not continual LoRA training. Dev results and transferred bias from dev-model checkpoints are not proof of future improvement. Publication-vintage, pretraining and execution limitations remain. No trades or bids."
+}

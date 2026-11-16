@@ -1,0 +1,66 @@
+{
+  "window": [
+    "2025-11-01",
+    "2026-11-09"
+  ],
+  "n_days": 372,
+  "models": [
+    {
+      "name": "chronos2_ft_lora",
+      "id": "4b84e50737",
+      "role": "candidate",
+      "mae": 12.350997296388003,
+      "battery_pct_oracle": 95.99914119030383,
+      "dm_p_vs_lear": 0.0
+    },
+    {
+      "name": "lgbm_stack_lora",
+      "id": "b0e0553ae7",
+      "role": "reference",
+      "mae": 11.967027764850075,
+      "battery_pct_oracle": 96.01253796171054,
+      "dm_p_vs_lear": 0.0
+    },
+    {
+      "name": "lgbm",
+      "id": "51cfdbe45f",
+      "role": "reference",
+      "mae": 15.492961884671521,
+      "battery_pct_oracle": 94.28474593409868,
+      "dm_p_vs_lear": 0.6433177075205326
+    },
+    {
+      "name": "blend_pool3",
+      "id": "9256383124",
+      "role": "candidate",
+      "mae": 11.81425641353201,
+      "battery_pct_oracle": 96.21636918377239,
+      "dm_p_vs_lear": 0.0
+    },
+    {
+      "name": "chronos2_ft_lora_pregate",
+      "id": "15830042bf",
+      "role": "candidate",
+      "mae": 15.386013748449235,
+      "battery_pct_oracle": 94.60791480530065,
+      "dm_p_vs_lear": 0.5429842874092483
+    },
+    {
+      "name": "chronos2_zs",
+      "id": "a7536ac266",
+      "role": "reference",
+      "mae": 13.499280029556656,
+      "battery_pct_oracle": 95.32424366361434,
+      "dm_p_vs_lear": 6.133852969991693e-08
+    },
+    {
+      "name": "lear",
+      "id": "b9d6688033",
+      "role": "reference",
+      "mae": 15.344581814210443,
+      "battery_pct_oracle": 92.37649665342563,
+      "dm_p_vs_lear": null
+    }
+  ],
+  "dm_p_lora_better_than_zs": 5.306866057708248e-12
+}

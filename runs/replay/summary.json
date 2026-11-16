@@ -1,0 +1,3747 @@
+{
+  "n_days": 370,
+  "window": [
+    "2025-11-01",
+    "2026-11-09"
+  ],
+  "calendar_days": 374,
+  "unscored_fixed_cost_eur": 328.5420944558522,
+  "fixed_cost_accounting": "all calendar days, including four skipped days assumed idle",
+  "mae": 15.38335498067495,
+  "totals": {
+    "gross_eur": 50797.28902631578,
+    "variable_cost_eur": 11974.034736842104,
+    "margin_eur": 38823.254289473676,
+    "fixed_cost_eur": 30718.68583162218,
+    "scenario_net_eur": 8104.568457851501,
+    "oracle_margin_eur": 41449.84348421052
+  },
+  "profitable_days": 328,
+  "losing_days": 20,
+  "decisions_sha256": "ef70f710a6529029cd61594092a64403546a5afd0c994a8b513f08b4e5bbe959",
+  "actual_source_sha256": "3b2d6f9531bef8de040d6727240ab2c61adaed40732602b48a1bc3cee5d9c5b4",
+  "missing_forecast_days": [
+    "2026-04-10",
+    "2026-04-11"
+  ],
+  "skipped": [
+    {
+      "day": "2026-03-29",
+      "reason": "DST: not 24 actual delivery hours"
+    },
+    {
+      "day": "2026-10-25",
+      "reason": "DST: not 24 actual delivery hours"
+    }
+  ],
+  "limitations": [
+    "Forecasts and decisions are historical simulations created now, not timestamped live orders",
+    "The original holdout has already been inspected; this is a retrospective diagnostic with no parameter selection",
+    "Source publication/revision vintages and foundation-model pretraining provenance are not independently proven",
+    "Hourly averaged prices are a proxy for actual quarter-hour products; full fills at the average are an assumption",
+    "Costs are illustrative; taxes, outages, imbalance risk and actual execution are excluded",
+    "Pre-gate mapping fits historically used past post-gate TSO forecasts as labels, not current-day post-gate inputs"
+  ],
+  "days": [
+    {
+      "day": "2025-11-01",
+      "mae": 13.947467575073242,
+      "gross_eur": 67.75015789473683,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 41.74226315789473,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -40.39326045606831,
+      "oracle_margin_eur": 45.96752631578947
+    },
+    {
+      "day": "2025-11-02",
+      "mae": 7.358622258504233,
+      "gross_eur": 58.04213157894735,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 32.03423684210524,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -50.10128677185781,
+      "oracle_margin_eur": 35.88492105263156
+    },
+    {
+      "day": "2025-11-03",
+      "mae": 13.72825990041097,
+      "gross_eur": 10.708736842105253,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -15.299157894736865,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -97.43468150869991,
+      "oracle_margin_eur": 8.207
+    },
+    {
+      "day": "2025-11-04",
+      "mae": 15.370211874643962,
+      "gross_eur": 106.46605263157893,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 80.45815789473683,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -1.6773657192262164,
+      "oracle_margin_eur": 120.81318421052629
+    },
+    {
+      "day": "2025-11-05",
+      "mae": 9.744457219441731,
+      "gross_eur": 61.62163157894733,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 35.613736842105254,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -46.52178677185779,
+      "oracle_margin_eur": 54.55084210526313
+    },
+    {
+      "day": "2025-11-06",
+      "mae": 7.925060081481935,
+      "gross_eur": 86.51813157894733,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 34.50234210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -47.63318150869989,
+      "oracle_margin_eur": 34.80655263157891
+    },
+    {
+      "day": "2025-11-07",
+      "mae": 6.8273829269409205,
+      "gross_eur": 108.88321052631575,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 56.86742105263154,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -25.268102561331503,
+      "oracle_margin_eur": 57.60742105263154
+    },
+    {
+      "day": "2025-11-08",
+      "mae": 4.729539972941081,
+      "gross_eur": 29.229789473684193,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 3.2218947368420885,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -78.91362887712096,
+      "oracle_margin_eur": 4.776657894736829
+    },
+    {
+      "day": "2025-11-09",
+      "mae": 4.411044362386068,
+      "gross_eur": 21.308157894736823,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -4.699736842105295,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -86.83526045606834,
+      "oracle_margin_eur": 0.45260526315787075
+    },
+    {
+      "day": "2025-11-10",
+      "mae": 6.4596295674641935,
+      "gross_eur": 40.15842105263158,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 14.150526315789492,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -67.98499729817355,
+      "oracle_margin_eur": 32.17389473684209
+    },
+    {
+      "day": "2025-11-11",
+      "mae": 4.426372934977214,
+      "gross_eur": 56.689631578947356,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 30.681736842105252,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -51.45378677185779,
+      "oracle_margin_eur": 31.21226315789471
+    },
+    {
+      "day": "2025-11-12",
+      "mae": 4.331867497762044,
+      "gross_eur": 75.39355263157893,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 23.377763157894734,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -58.75776045606831,
+      "oracle_margin_eur": 31.578578947368428
+    },
+    {
+      "day": "2025-11-13",
+      "mae": 17.698779837290445,
+      "gross_eur": 129.18994736842103,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 77.1741578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -4.961365719226251,
+      "oracle_margin_eur": 94.29964473684211
+    },
+    {
+      "day": "2025-11-14",
+      "mae": 4.457640584309895,
+      "gross_eur": 30.00207894736839,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 3.9941842105262992,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -78.14133940343675,
+      "oracle_margin_eur": 9.069868421052597
+    },
+    {
+      "day": "2025-11-15",
+      "mae": 5.833407923380534,
+      "gross_eur": 38.65842105263157,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 12.650526315789449,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -69.4849972981736,
+      "oracle_margin_eur": 17.6957894736842
+    },
+    {
+      "day": "2025-11-16",
+      "mae": 3.071767603556315,
+      "gross_eur": 22.17450789473685,
+      "variable_cost_eur": 23.407105263157895,
+      "margin_eur": -1.2325973684210396,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -83.36812098238408,
+      "oracle_margin_eur": 6.44623684210525
+    },
+    {
+      "day": "2025-11-17",
+      "mae": 6.982696901957195,
+      "gross_eur": 45.27523684210526,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 19.267342105263154,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -62.86818150869989,
+      "oracle_margin_eur": 22.865131578947356
+    },
+    {
+      "day": "2025-11-18",
+      "mae": 8.810865987141929,
+      "gross_eur": 61.01594736842104,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 35.00805263157895,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -47.1274709823841,
+      "oracle_margin_eur": 36.11963157894737
+    },
+    {
+      "day": "2025-11-19",
+      "mae": 7.74263298034668,
+      "gross_eur": 19.159921052631574,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -6.84797368421053,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -88.98349729817357,
+      "oracle_margin_eur": 16.947534210526257
+    },
+    {
+      "day": "2025-11-20",
+      "mae": 11.231542078653971,
+      "gross_eur": 74.97439473684209,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 48.96649999999998,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -33.16902361396306,
+      "oracle_margin_eur": 49.637973684210536
+    },
+    {
+      "day": "2025-11-21",
+      "mae": 23.494995218912763,
+      "gross_eur": 199.8468157894737,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 147.83102631578942,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 65.69550270182637,
+      "oracle_margin_eur": 149.67381578947368
+    },
+    {
+      "day": "2025-11-22",
+      "mae": 5.6872343063354505,
+      "gross_eur": 28.200157894736833,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 2.192263157894743,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -79.9432604560683,
+      "oracle_margin_eur": 3.296473684210511
+    },
+    {
+      "day": "2025-11-23",
+      "mae": 7.346959444681804,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-11-24",
+      "mae": 19.36576498667399,
+      "gross_eur": 173.27652631578948,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 147.26863157894738,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 65.13310796498433,
+      "oracle_margin_eur": 150.31915789473686
+    },
+    {
+      "day": "2025-11-25",
+      "mae": 55.90767101287841,
+      "gross_eur": 252.07502631578944,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 226.06713157894734,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 143.9316079649843,
+      "oracle_margin_eur": 230.15232105263152
+    },
+    {
+      "day": "2025-11-26",
+      "mae": 25.751549275716144,
+      "gross_eur": 238.42060526315788,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 186.40481578947367,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 104.26929217551063,
+      "oracle_margin_eur": 186.40481578947364
+    },
+    {
+      "day": "2025-11-27",
+      "mae": 16.228595390319825,
+      "gross_eur": 37.38447105263154,
+      "variable_cost_eur": 49.415000000000006,
+      "margin_eur": -12.030528947368438,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -94.16605256133148,
+      "oracle_margin_eur": 9.251842105263137
+    },
+    {
+      "day": "2025-11-28",
+      "mae": 13.180701815287273,
+      "gross_eur": 37.77915789473684,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 11.771263157894726,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -70.36426045606832,
+      "oracle_margin_eur": 22.497026315789462
+    },
+    {
+      "day": "2025-11-29",
+      "mae": 8.948591181437175,
+      "gross_eur": 14.958657894736831,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -11.049236842105259,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -93.1847604560683,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-11-30",
+      "mae": 7.832566248575847,
+      "gross_eur": 29.874868421052625,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 3.8669736842105307,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -78.26854992975251,
+      "oracle_margin_eur": 5.918973684210513
+    },
+    {
+      "day": "2025-12-01",
+      "mae": 6.35740385691325,
+      "gross_eur": 43.25613157894738,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 17.248236842105285,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -64.88728677185776,
+      "oracle_margin_eur": 21.757710526315797
+    },
+    {
+      "day": "2025-12-02",
+      "mae": 17.27530818303426,
+      "gross_eur": 86.36326315789472,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 60.355368421052624,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -21.78015519291042,
+      "oracle_margin_eur": 75.56263157894735
+    },
+    {
+      "day": "2025-12-03",
+      "mae": 17.058929379781087,
+      "gross_eur": 211.99789473684208,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 159.9821052631579,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 77.84658164919486,
+      "oracle_margin_eur": 207.42197368421057
+    },
+    {
+      "day": "2025-12-04",
+      "mae": 19.38103890736898,
+      "gross_eur": 25.00078947368418,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": -27.01500000000005,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -109.15052361396309,
+      "oracle_margin_eur": 34.60784210526313
+    },
+    {
+      "day": "2025-12-05",
+      "mae": 7.595224723815918,
+      "gross_eur": 79.19376315789472,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 53.18586842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -28.949655192910427,
+      "oracle_margin_eur": 53.826921052631576
+    },
+    {
+      "day": "2025-12-06",
+      "mae": 3.0937723922729483,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-07",
+      "mae": 4.947744630177817,
+      "gross_eur": 44.216368421052614,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 18.20847368421051,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -63.927049929752535,
+      "oracle_margin_eur": 18.488473684210504
+    },
+    {
+      "day": "2025-12-08",
+      "mae": 8.341261825561524,
+      "gross_eur": 91.55749999999999,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 65.54960526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -16.58591835080516,
+      "oracle_margin_eur": 71.88644736842105
+    },
+    {
+      "day": "2025-12-09",
+      "mae": 5.249648869832357,
+      "gross_eur": 46.54460526315787,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 20.536710526315776,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -61.59881308764727,
+      "oracle_margin_eur": 20.537763157894716
+    },
+    {
+      "day": "2025-12-10",
+      "mae": 14.394597339630126,
+      "gross_eur": 51.28928947368419,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 25.281394736842092,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -56.85412887712096,
+      "oracle_margin_eur": 41.314394736842104
+    },
+    {
+      "day": "2025-12-11",
+      "mae": 5.092394816080728,
+      "gross_eur": 33.019499999999994,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 7.011605263157904,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -75.12391835080514,
+      "oracle_margin_eur": 7.200026315789472
+    },
+    {
+      "day": "2025-12-12",
+      "mae": 4.861926574707032,
+      "gross_eur": 47.280763157894725,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 21.272868421052635,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -60.86265519291041,
+      "oracle_margin_eur": 25.034289473684225
+    },
+    {
+      "day": "2025-12-13",
+      "mae": 4.82658405303955,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 4.2008157894736655
+    },
+    {
+      "day": "2025-12-14",
+      "mae": 3.2773128509521485,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-15",
+      "mae": 6.1813092676798504,
+      "gross_eur": 21.645078947368418,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -4.362815789473686,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -86.49833940343673,
+      "oracle_margin_eur": 2.790684210526308
+    },
+    {
+      "day": "2025-12-16",
+      "mae": 7.861612370808918,
+      "gross_eur": 71.08473684210523,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 45.07684210526314,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -37.058681508699905,
+      "oracle_margin_eur": 46.71894736842104
+    },
+    {
+      "day": "2025-12-17",
+      "mae": 6.805709114074706,
+      "gross_eur": 36.96068421052631,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 10.952789473684218,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -71.18273414027882,
+      "oracle_margin_eur": 11.120157894736835
+    },
+    {
+      "day": "2025-12-18",
+      "mae": 10.80112983703613,
+      "gross_eur": 54.30126315789472,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 28.293368421052612,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -53.84215519291043,
+      "oracle_margin_eur": 35.150236842105244
+    },
+    {
+      "day": "2025-12-19",
+      "mae": 14.461931088765462,
+      "gross_eur": 97.77394736842106,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 71.76605263157896,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -10.369470982384087,
+      "oracle_margin_eur": 72.33915789473684
+    },
+    {
+      "day": "2025-12-20",
+      "mae": 5.905146306355793,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 2.3247105263157692
+    },
+    {
+      "day": "2025-12-21",
+      "mae": 4.046402765909832,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-22",
+      "mae": 9.782492624918618,
+      "gross_eur": 25.77257894736841,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": -0.23531578947370058,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.37083940343675,
+      "oracle_margin_eur": 6.531815789473669
+    },
+    {
+      "day": "2025-12-23",
+      "mae": 11.434114939371744,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-24",
+      "mae": 8.817674776713053,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-25",
+      "mae": 13.253784510294599,
+      "gross_eur": 30.41371052631579,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 4.405815789473671,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -77.72970782448937,
+      "oracle_margin_eur": 14.879868421052628
+    },
+    {
+      "day": "2025-12-26",
+      "mae": 4.591157925923665,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 1.7880789473684189
+    },
+    {
+      "day": "2025-12-27",
+      "mae": 5.962755648295086,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-28",
+      "mae": 5.5205949020385745,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-29",
+      "mae": 3.2252029418945316,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2025-12-30",
+      "mae": 9.528733113606771,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 6.932921052631556
+    },
+    {
+      "day": "2025-12-31",
+      "mae": 11.651414699554444,
+      "gross_eur": 14.32507894736841,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": -11.682815789473699,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -93.81833940343674,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-01-01",
+      "mae": 34.45124787648519,
+      "gross_eur": 21.98402631578947,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -4.023868421052635,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -86.15939203501568,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-01-02",
+      "mae": 6.552387396494548,
+      "gross_eur": 80.74063157894736,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 54.732736842105254,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -27.40278677185779,
+      "oracle_margin_eur": 58.26565789473683
+    },
+    {
+      "day": "2026-01-03",
+      "mae": 4.769267539978027,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 2.2279736842105216
+    },
+    {
+      "day": "2026-01-04",
+      "mae": 4.029784367879233,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 2.1183684210526224
+    },
+    {
+      "day": "2026-01-05",
+      "mae": 25.218751640319823,
+      "gross_eur": 121.38481578947368,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 95.37692105263159,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 13.241397438668542,
+      "oracle_margin_eur": 95.37692105263159
+    },
+    {
+      "day": "2026-01-06",
+      "mae": 9.182530886332193,
+      "gross_eur": 56.22942105263155,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 4.213631578947371,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -77.92189203501567,
+      "oracle_margin_eur": 28.859526315789452
+    },
+    {
+      "day": "2026-01-07",
+      "mae": 12.545426737467446,
+      "gross_eur": 15.767976315789454,
+      "variable_cost_eur": 23.407105263157895,
+      "margin_eur": -7.639128947368434,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -89.77465256133148,
+      "oracle_margin_eur": 7.799447368421042
+    },
+    {
+      "day": "2026-01-08",
+      "mae": 43.18094665527344,
+      "gross_eur": 135.05223684210523,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 109.04434210526314,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 26.908818491300096,
+      "oracle_margin_eur": 138.47786842105262
+    },
+    {
+      "day": "2026-01-09",
+      "mae": 4.3093725776672365,
+      "gross_eur": 36.39384210526315,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 10.38594736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -71.74957624554199,
+      "oracle_margin_eur": 12.542447368421051
+    },
+    {
+      "day": "2026-01-10",
+      "mae": 5.788905576070147,
+      "gross_eur": 60.025552631578925,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 34.017657894736814,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -48.11786571922623,
+      "oracle_margin_eur": 36.79086842105262
+    },
+    {
+      "day": "2026-01-11",
+      "mae": 6.2150093460083005,
+      "gross_eur": 8.777500000000003,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -17.2303947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -99.36591835080515,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-01-12",
+      "mae": 9.217900848388672,
+      "gross_eur": 32.05894736842103,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 6.051052631578926,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -76.08447098238412,
+      "oracle_margin_eur": 19.417263157894723
+    },
+    {
+      "day": "2026-01-13",
+      "mae": 15.513579088846841,
+      "gross_eur": 34.85505263157894,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 8.847157894736853,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -73.28836571922619,
+      "oracle_margin_eur": 22.04
+    },
+    {
+      "day": "2026-01-14",
+      "mae": 10.083731905619304,
+      "gross_eur": 99.58952631578948,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 73.58163157894738,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -8.553892035015664,
+      "oracle_margin_eur": 75.14163157894737
+    },
+    {
+      "day": "2026-01-15",
+      "mae": 6.0405137252807615,
+      "gross_eur": 50.73236842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 24.724473684210523,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -57.41104992975252,
+      "oracle_margin_eur": 24.724473684210523
+    },
+    {
+      "day": "2026-01-16",
+      "mae": 5.058262685139974,
+      "gross_eur": 90.60823684210526,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 64.60034210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -17.53518150869988,
+      "oracle_margin_eur": 64.6856052631579
+    },
+    {
+      "day": "2026-01-17",
+      "mae": 5.14778372446696,
+      "gross_eur": 33.56449999999998,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 7.556605263157891,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -74.57891835080515,
+      "oracle_margin_eur": 9.494342105263136
+    },
+    {
+      "day": "2026-01-18",
+      "mae": 6.034286944071451,
+      "gross_eur": 15.8862894736842,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -10.121605263157889,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -92.25712887712093,
+      "oracle_margin_eur": 7.11368421052628
+    },
+    {
+      "day": "2026-01-19",
+      "mae": 16.25515556335449,
+      "gross_eur": 125.24431578947363,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 73.22852631578947,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -8.906997298173579,
+      "oracle_margin_eur": 83.49107894736838
+    },
+    {
+      "day": "2026-01-20",
+      "mae": 18.826712239583333,
+      "gross_eur": 261.7863421052631,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 209.77055263157885,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 127.6350290176158,
+      "oracle_margin_eur": 235.5250526315789
+    },
+    {
+      "day": "2026-01-21",
+      "mae": 12.826737848917643,
+      "gross_eur": 89.1871315789474,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 37.17134210526318,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -44.964181508699866,
+      "oracle_margin_eur": 44.917473684210535
+    },
+    {
+      "day": "2026-01-22",
+      "mae": 5.122989730834962,
+      "gross_eur": 74.33760526315795,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 22.321815789473703,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -59.81370782448934,
+      "oracle_margin_eur": 22.78076315789474
+    },
+    {
+      "day": "2026-01-23",
+      "mae": 5.680117797851563,
+      "gross_eur": 45.192999999999984,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 19.18510526315788,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -62.950418350805165,
+      "oracle_margin_eur": 21.640578947368397
+    },
+    {
+      "day": "2026-01-24",
+      "mae": 2.7363991546630846,
+      "gross_eur": 36.670315789473676,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 10.662421052631572,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -71.47310256133147,
+      "oracle_margin_eur": 10.662421052631572
+    },
+    {
+      "day": "2026-01-25",
+      "mae": 3.9629425811767565,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-01-26",
+      "mae": 11.299965782165524,
+      "gross_eur": 69.64710526315787,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 43.63921052631579,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -38.49631308764725,
+      "oracle_margin_eur": 43.639210526315765
+    },
+    {
+      "day": "2026-01-27",
+      "mae": 8.295663948059085,
+      "gross_eur": 72.90752631578947,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 20.891736842105274,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -61.24378677185777,
+      "oracle_margin_eur": 25.84625789473686
+    },
+    {
+      "day": "2026-01-28",
+      "mae": 14.153223787943524,
+      "gross_eur": 54.568947368421036,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 28.561052631578942,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -53.5744709823841,
+      "oracle_margin_eur": 31.103815789473686
+    },
+    {
+      "day": "2026-01-29",
+      "mae": 11.863707618713377,
+      "gross_eur": 44.04073684210523,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 18.03284210526313,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -64.10268150869992,
+      "oracle_margin_eur": 28.250105263157863
+    },
+    {
+      "day": "2026-01-30",
+      "mae": 5.5517533493041995,
+      "gross_eur": 33.691999999999965,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 7.684105263157875,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -74.45141835080517,
+      "oracle_margin_eur": 12.225368421052607
+    },
+    {
+      "day": "2026-01-31",
+      "mae": 6.33658950805664,
+      "gross_eur": 29.56792105263159,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 3.560026315789486,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -78.57549729817356,
+      "oracle_margin_eur": 7.296421052631544
+    },
+    {
+      "day": "2026-02-01",
+      "mae": 4.224159838358561,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 5.343131578947343
+    },
+    {
+      "day": "2026-02-02",
+      "mae": 7.349656880696614,
+      "gross_eur": 34.16018421052631,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 8.152289473684212,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -73.98323414027884,
+      "oracle_margin_eur": 11.277789473684194
+    },
+    {
+      "day": "2026-02-03",
+      "mae": 7.084200922648112,
+      "gross_eur": 35.66044736842104,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 9.652552631578931,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -72.48297098238412,
+      "oracle_margin_eur": 12.814078947368394
+    },
+    {
+      "day": "2026-02-04",
+      "mae": 9.324820607503254,
+      "gross_eur": 25.498973684210526,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": -0.5089210526315711,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.64444466659461,
+      "oracle_margin_eur": 1.3300263157894818
+    },
+    {
+      "day": "2026-02-05",
+      "mae": 4.083105875651041,
+      "gross_eur": 39.37710526315789,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 13.369210526315797,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -68.76631308764725,
+      "oracle_margin_eur": 15.396578947368397
+    },
+    {
+      "day": "2026-02-06",
+      "mae": 9.613456319173176,
+      "gross_eur": 26.876815789473667,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 0.8689210526315723,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -81.26660256133147,
+      "oracle_margin_eur": 8.227736842105273
+    },
+    {
+      "day": "2026-02-07",
+      "mae": 4.07493386586507,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 1.0471842105263107
+    },
+    {
+      "day": "2026-02-08",
+      "mae": 3.4859991327921556,
+      "gross_eur": 24.62123684210526,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": -1.3866578947368282,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -83.52218150869987,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-02-09",
+      "mae": 16.463792750040692,
+      "gross_eur": 115.33055263157894,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 89.32265789473685,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 7.187134280773805,
+      "oracle_margin_eur": 94.58084210526314
+    },
+    {
+      "day": "2026-02-10",
+      "mae": 7.202661628723146,
+      "gross_eur": 32.63439473684207,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": -19.381394736842097,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -101.51691835080514,
+      "oracle_margin_eur": 2.799026315789476
+    },
+    {
+      "day": "2026-02-11",
+      "mae": 5.542674636840819,
+      "gross_eur": 21.680789473684214,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": -4.32710526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -86.46262887712093,
+      "oracle_margin_eur": 4.527552631578928
+    },
+    {
+      "day": "2026-02-12",
+      "mae": 4.918510411580403,
+      "gross_eur": 26.478552631578935,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 0.4706578947368314,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -81.66486571922621,
+      "oracle_margin_eur": 3.893315789473675
+    },
+    {
+      "day": "2026-02-13",
+      "mae": 6.368300094604493,
+      "gross_eur": 37.47892105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 11.471026315789484,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -70.66449729817356,
+      "oracle_margin_eur": 17.004789473684212
+    },
+    {
+      "day": "2026-02-14",
+      "mae": 4.888696212768555,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 7.087710526315789
+    },
+    {
+      "day": "2026-02-15",
+      "mae": 6.300299371083578,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-02-16",
+      "mae": 4.859829076131185,
+      "gross_eur": 51.65778947368422,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 25.64989473684213,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -56.48562887712092,
+      "oracle_margin_eur": 30.03410526315792
+    },
+    {
+      "day": "2026-02-17",
+      "mae": 8.80928810119629,
+      "gross_eur": 31.25942105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 5.2515263157894765,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -76.88399729817357,
+      "oracle_margin_eur": 7.988368421052613
+    },
+    {
+      "day": "2026-02-18",
+      "mae": 9.790755449930828,
+      "gross_eur": 37.24157894736841,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 11.233684210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -70.90183940343672,
+      "oracle_margin_eur": 56.74076315789472
+    },
+    {
+      "day": "2026-02-19",
+      "mae": 4.797802416483561,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 0.07986315789472798
+    },
+    {
+      "day": "2026-02-20",
+      "mae": 8.150125605265302,
+      "gross_eur": 9.984884210526303,
+      "variable_cost_eur": 23.407105263157895,
+      "margin_eur": -13.422221052631585,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -95.55774466659463,
+      "oracle_margin_eur": 0.0
+    },
+    {
+      "day": "2026-02-21",
+      "mae": 16.658219045003253,
+      "gross_eur": 53.18923684210525,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 27.181342105263155,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -54.95418150869989,
+      "oracle_margin_eur": 38.81081578947368
+    },
+    {
+      "day": "2026-02-22",
+      "mae": 8.039902890523274,
+      "gross_eur": 0.0,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 0.0,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -82.13552361396304,
+      "oracle_margin_eur": 12.385368421052625
+    },
+    {
+      "day": "2026-02-23",
+      "mae": 12.719931151072183,
+      "gross_eur": 142.38923684210528,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 90.37344736842103,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 8.23792375445798,
+      "oracle_margin_eur": 97.45668421052633
+    },
+    {
+      "day": "2026-02-24",
+      "mae": 7.978100001017253,
+      "gross_eur": 86.25592105263156,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 60.24802631578949,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -21.887497298173557,
+      "oracle_margin_eur": 75.61244736842103
+    },
+    {
+      "day": "2026-02-25",
+      "mae": 4.328195457458494,
+      "gross_eur": 51.72360526315787,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 25.71571052631576,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -56.419813087647285,
+      "oracle_margin_eur": 34.33605263157891
+    },
+    {
+      "day": "2026-02-26",
+      "mae": 12.387785784403482,
+      "gross_eur": 92.02499999999999,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 66.01710526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -16.118418350805158,
+      "oracle_margin_eur": 73.61999999999998
+    },
+    {
+      "day": "2026-02-27",
+      "mae": 11.818677304585776,
+      "gross_eur": 112.20552631578947,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 86.19763157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 4.062107964984321,
+      "oracle_margin_eur": 86.23630789473683
+    },
+    {
+      "day": "2026-02-28",
+      "mae": 18.14983350753784,
+      "gross_eur": 90.66523684210526,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 64.65734210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -17.47818150869989,
+      "oracle_margin_eur": 64.6826052631579
+    },
+    {
+      "day": "2026-03-01",
+      "mae": 20.560039132436117,
+      "gross_eur": 105.47736842105263,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 79.46947368421053,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -2.6660499297525178,
+      "oracle_margin_eur": 79.46947368421053
+    },
+    {
+      "day": "2026-03-02",
+      "mae": 11.81651466369629,
+      "gross_eur": 196.70065789473682,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 144.68486842105264,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 62.5493448070896,
+      "oracle_margin_eur": 157.7753947368421
+    },
+    {
+      "day": "2026-03-03",
+      "mae": 10.255256430308025,
+      "gross_eur": 211.22699999999998,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 159.21121052631577,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 77.07568691235272,
+      "oracle_margin_eur": 162.4048947368421
+    },
+    {
+      "day": "2026-03-04",
+      "mae": 40.8752072652181,
+      "gross_eur": 381.8598684210526,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 329.8440789473684,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 247.70855533340537,
+      "oracle_margin_eur": 330.3325
+    },
+    {
+      "day": "2026-03-05",
+      "mae": 12.79150882720947,
+      "gross_eur": 229.63044736842107,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 177.61465789473687,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 95.47913428077382,
+      "oracle_margin_eur": 180.3051842105263
+    },
+    {
+      "day": "2026-03-06",
+      "mae": 15.687397950490315,
+      "gross_eur": 224.8036052631579,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 172.7878157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 90.65229217551067,
+      "oracle_margin_eur": 172.78781578947368
+    },
+    {
+      "day": "2026-03-07",
+      "mae": 10.19875187555949,
+      "gross_eur": 169.10965789473684,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 143.10176315789477,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 60.96623954393172,
+      "oracle_margin_eur": 143.10176315789474
+    },
+    {
+      "day": "2026-03-08",
+      "mae": 9.938510246276856,
+      "gross_eur": 151.37963157894737,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 125.37173684210525,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 43.236213228142205,
+      "oracle_margin_eur": 125.56647368421051
+    },
+    {
+      "day": "2026-03-09",
+      "mae": 7.616164779663085,
+      "gross_eur": 222.84723684210525,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 170.83144736842104,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 88.695923754458,
+      "oracle_margin_eur": 176.00407894736838
+    },
+    {
+      "day": "2026-03-10",
+      "mae": 10.833826656341552,
+      "gross_eur": 142.6705263157894,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 90.65473684210522,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 8.519213228142178,
+      "oracle_margin_eur": 95.96842105263153
+    },
+    {
+      "day": "2026-03-11",
+      "mae": 21.50226635615031,
+      "gross_eur": 145.17421842105261,
+      "variable_cost_eur": 49.415000000000006,
+      "margin_eur": 95.75921842105261,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 13.623694807089564,
+      "oracle_margin_eur": 112.20347368421054
+    },
+    {
+      "day": "2026-03-12",
+      "mae": 18.698835201263424,
+      "gross_eur": 111.60018421052631,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 85.5922894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 3.456765859721159,
+      "oracle_margin_eur": 96.57265789473684
+    },
+    {
+      "day": "2026-03-13",
+      "mae": 29.80793299992879,
+      "gross_eur": 162.2733947368421,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 136.2655,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 54.12997638603696,
+      "oracle_margin_eur": 140.85986842105262
+    },
+    {
+      "day": "2026-03-14",
+      "mae": 4.991219635009767,
+      "gross_eur": 44.09026315789471,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 18.08236842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -64.05315519291042,
+      "oracle_margin_eur": 27.944289473684215
+    },
+    {
+      "day": "2026-03-15",
+      "mae": 14.36282694498698,
+      "gross_eur": 103.20715789473682,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 77.19926315789473,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -4.936260456068311,
+      "oracle_margin_eur": 77.19926315789472
+    },
+    {
+      "day": "2026-03-16",
+      "mae": 29.076590684254967,
+      "gross_eur": 212.8489736842105,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 160.8331842105263,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 78.69766059656325,
+      "oracle_margin_eur": 181.73544736842103
+    },
+    {
+      "day": "2026-03-17",
+      "mae": 10.04185001373291,
+      "gross_eur": 142.78336842105261,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 90.7675789473684,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 8.632055333405361,
+      "oracle_margin_eur": 92.86126315789471
+    },
+    {
+      "day": "2026-03-18",
+      "mae": 18.710894915262855,
+      "gross_eur": 207.14213157894733,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 155.12634210526318,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 72.99081849130013,
+      "oracle_margin_eur": 156.13476315789472
+    },
+    {
+      "day": "2026-03-19",
+      "mae": 20.276118342081705,
+      "gross_eur": 228.02713157894738,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 176.01134210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 93.87581849130012,
+      "oracle_margin_eur": 188.1455526315789
+    },
+    {
+      "day": "2026-03-20",
+      "mae": 15.042713216145833,
+      "gross_eur": 174.63223684210521,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 122.61644736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 40.480923754458004,
+      "oracle_margin_eur": 125.40092105263156
+    },
+    {
+      "day": "2026-03-21",
+      "mae": 11.743191483815513,
+      "gross_eur": 133.4221578947368,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 107.41426315789474,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 25.278739543931692,
+      "oracle_margin_eur": 112.2226842105263
+    },
+    {
+      "day": "2026-03-22",
+      "mae": 13.915255482991535,
+      "gross_eur": 176.48576315789472,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 150.47786842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 68.34234480708957,
+      "oracle_margin_eur": 151.69892105263156
+    },
+    {
+      "day": "2026-03-23",
+      "mae": 10.82932507197062,
+      "gross_eur": 240.36526315789467,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 188.3494736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 106.21395007024745,
+      "oracle_margin_eur": 192.16421052631577
+    },
+    {
+      "day": "2026-03-24",
+      "mae": 15.920632979075114,
+      "gross_eur": 129.068,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 103.06010526315791,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.924581649194863,
+      "oracle_margin_eur": 105.1026052631579
+    },
+    {
+      "day": "2026-03-25",
+      "mae": 19.34749619801839,
+      "gross_eur": 162.30955263157895,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 110.29376315789472,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 28.15823954393167,
+      "oracle_margin_eur": 127.8571842105263
+    },
+    {
+      "day": "2026-03-26",
+      "mae": 11.53031012217204,
+      "gross_eur": 191.6509736842105,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 139.6351842105263,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 57.499660596563245,
+      "oracle_margin_eur": 139.63518421052635
+    },
+    {
+      "day": "2026-03-27",
+      "mae": 9.125687185923258,
+      "gross_eur": 138.71747368421052,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 86.70168421052631,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 4.566160596563265,
+      "oracle_margin_eur": 88.69642105263154
+    },
+    {
+      "day": "2026-03-28",
+      "mae": 34.78198551177979,
+      "gross_eur": 138.22439473684207,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 112.21649999999998,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 30.080976386036937,
+      "oracle_margin_eur": 113.20702631578945
+    },
+    {
+      "day": "2026-03-30",
+      "mae": 29.15176452636719,
+      "gross_eur": 194.6897105263158,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 142.67392105263156,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 60.53839743866851,
+      "oracle_margin_eur": 160.6805
+    },
+    {
+      "day": "2026-03-31",
+      "mae": 11.073406321207683,
+      "gross_eur": 157.95471052631575,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 105.93892105263156,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 23.80339743866851,
+      "oracle_margin_eur": 108.39947368421048
+    },
+    {
+      "day": "2026-04-01",
+      "mae": 9.86515140533447,
+      "gross_eur": 170.79163157894732,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 118.77584210526312,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 36.64031849130008,
+      "oracle_margin_eur": 118.78215789473683
+    },
+    {
+      "day": "2026-04-02",
+      "mae": 7.069958992004396,
+      "gross_eur": 145.21855263157892,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 93.20276315789472,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 11.067239543931677,
+      "oracle_margin_eur": 94.70171052631576
+    },
+    {
+      "day": "2026-04-03",
+      "mae": 15.19321523030599,
+      "gross_eur": 88.91247368421052,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 62.90457894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -19.230944666594624,
+      "oracle_margin_eur": 66.5283947368421
+    },
+    {
+      "day": "2026-04-04",
+      "mae": 47.8784538078308,
+      "gross_eur": 128.9687894736842,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 102.9608947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.825371122879062,
+      "oracle_margin_eur": 116.60965789473684
+    },
+    {
+      "day": "2026-04-05",
+      "mae": 31.718694464365644,
+      "gross_eur": 108.20986842105265,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 82.20197368421054,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 0.06645007024749816,
+      "oracle_margin_eur": 115.70934210526318
+    },
+    {
+      "day": "2026-04-06",
+      "mae": 40.91129219055176,
+      "gross_eur": 237.67615789473686,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 185.66036842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 103.52484480708958,
+      "oracle_margin_eur": 216.23318421052633
+    },
+    {
+      "day": "2026-04-07",
+      "mae": 23.453406352996826,
+      "gross_eur": 258.4870789473684,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 206.47128947368418,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 124.33576585972114,
+      "oracle_margin_eur": 206.87865789473682
+    },
+    {
+      "day": "2026-04-08",
+      "mae": 19.498360481262207,
+      "gross_eur": 247.38949999999997,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 195.3737105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 113.23818691235275,
+      "oracle_margin_eur": 197.76634210526313
+    },
+    {
+      "day": "2026-04-09",
+      "mae": 21.606151383717854,
+      "gross_eur": 171.62044736842103,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 119.60465789473683,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 37.46913428077379,
+      "oracle_margin_eur": 119.68465789473683
+    },
+    {
+      "day": "2026-04-12",
+      "mae": 30.266180674235027,
+      "gross_eur": 68.62097368421051,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 42.61307894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -39.52244466659462,
+      "oracle_margin_eur": 111.09842105263161
+    },
+    {
+      "day": "2026-04-13",
+      "mae": 8.13963394165039,
+      "gross_eur": 70.4498157894737,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 18.434026315789495,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -63.70149729817355,
+      "oracle_margin_eur": 53.4978947368421
+    },
+    {
+      "day": "2026-04-14",
+      "mae": 8.891223271687823,
+      "gross_eur": 139.60749999999996,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 87.59171052631577,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 5.45618691235272,
+      "oracle_margin_eur": 96.78415789473681
+    },
+    {
+      "day": "2026-04-15",
+      "mae": 19.570614725748698,
+      "gross_eur": 152.76934210526315,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 100.7535526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 18.618029017615854,
+      "oracle_margin_eur": 101.69460526315788
+    },
+    {
+      "day": "2026-04-16",
+      "mae": 16.01550510406494,
+      "gross_eur": 142.27881578947364,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 90.26302631578946,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 8.127502701826415,
+      "oracle_margin_eur": 110.98826315789469
+    },
+    {
+      "day": "2026-04-17",
+      "mae": 15.14642219543457,
+      "gross_eur": 147.71992105263158,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 95.70413157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 13.568607964984324,
+      "oracle_margin_eur": 96.0369842105263
+    },
+    {
+      "day": "2026-04-18",
+      "mae": 8.697047055562338,
+      "gross_eur": 129.18405263157894,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 103.17615789473682,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 21.040634280773773,
+      "oracle_margin_eur": 115.85865789473681
+    },
+    {
+      "day": "2026-04-19",
+      "mae": 10.664884522755942,
+      "gross_eur": 120.3623947368421,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 94.35449999999999,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 12.218976386036942,
+      "oracle_margin_eur": 94.98607894736843
+    },
+    {
+      "day": "2026-04-20",
+      "mae": 18.42925936381022,
+      "gross_eur": 96.1968947368421,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 44.18110526315788,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -37.95441835080516,
+      "oracle_margin_eur": 68.23523684210525
+    },
+    {
+      "day": "2026-04-21",
+      "mae": 28.14948298136393,
+      "gross_eur": 166.17292105263158,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 114.15713157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 32.02160796498433,
+      "oracle_margin_eur": 115.23415789473685
+    },
+    {
+      "day": "2026-04-22",
+      "mae": 13.21124928156535,
+      "gross_eur": 168.09976315789473,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 142.09186842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 59.95634480708958,
+      "oracle_margin_eur": 142.09186842105262
+    },
+    {
+      "day": "2026-04-23",
+      "mae": 11.288884830474851,
+      "gross_eur": 182.19723684210527,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 156.18934210526314,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 74.05381849130009,
+      "oracle_margin_eur": 156.18934210526317
+    },
+    {
+      "day": "2026-04-24",
+      "mae": 17.99554718653361,
+      "gross_eur": 160.63721052631578,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 134.62931578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 52.493792175510634,
+      "oracle_margin_eur": 135.63773684210526
+    },
+    {
+      "day": "2026-04-25",
+      "mae": 31.81162965774536,
+      "gross_eur": 271.03636842105266,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 245.02847368421055,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 162.8929500702475,
+      "oracle_margin_eur": 245.02847368421055
+    },
+    {
+      "day": "2026-04-26",
+      "mae": 67.08271792093912,
+      "gross_eur": 585.4216315789474,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 559.4137368421053,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 477.27821322814225,
+      "oracle_margin_eur": 559.4137368421053
+    },
+    {
+      "day": "2026-04-27",
+      "mae": 21.506423676808677,
+      "gross_eur": 191.83892105263158,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 139.82313157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 57.68760796498432,
+      "oracle_margin_eur": 166.13813157894737
+    },
+    {
+      "day": "2026-04-28",
+      "mae": 19.37420976638794,
+      "gross_eur": 145.4572894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 119.4493947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 37.31387112287905,
+      "oracle_margin_eur": 119.4493947368421
+    },
+    {
+      "day": "2026-04-29",
+      "mae": 21.488324718475344,
+      "gross_eur": 215.7074736842105,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 163.69168421052632,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 81.55616059656327,
+      "oracle_margin_eur": 180.17628947368422
+    },
+    {
+      "day": "2026-04-30",
+      "mae": 13.676641737620036,
+      "gross_eur": 200.4668947368421,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 174.459,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 92.32347638603696,
+      "oracle_margin_eur": 179.36352631578944
+    },
+    {
+      "day": "2026-05-01",
+      "mae": 63.963157354990635,
+      "gross_eur": 687.3971842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 661.3892894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 579.2537658597212,
+      "oracle_margin_eur": 661.3892894736842
+    },
+    {
+      "day": "2026-05-02",
+      "mae": 28.71632045110067,
+      "gross_eur": 318.0048684210526,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 291.9969736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 209.86145007024746,
+      "oracle_margin_eur": 291.9969736842105
+    },
+    {
+      "day": "2026-05-03",
+      "mae": 10.75879138946533,
+      "gross_eur": 148.65176315789475,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 122.64386842105264,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 40.5083448070896,
+      "oracle_margin_eur": 122.64386842105264
+    },
+    {
+      "day": "2026-05-04",
+      "mae": 20.302584800720215,
+      "gross_eur": 190.43552631578947,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 138.41973684210524,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 56.28421322814219,
+      "oracle_margin_eur": 159.3655526315789
+    },
+    {
+      "day": "2026-05-05",
+      "mae": 12.048761405944825,
+      "gross_eur": 63.71665789473678,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 11.700868421052592,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -70.43465519291045,
+      "oracle_margin_eur": 26.769736842105246
+    },
+    {
+      "day": "2026-05-06",
+      "mae": 6.69386136372884,
+      "gross_eur": 53.146631578947364,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 27.13873684210526,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -54.996786771857785,
+      "oracle_margin_eur": 28.81452631578945
+    },
+    {
+      "day": "2026-05-07",
+      "mae": 9.007458902994792,
+      "gross_eur": 139.5757105263157,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 87.55992105263152,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 5.424397438668478,
+      "oracle_margin_eur": 88.75571052631571
+    },
+    {
+      "day": "2026-05-08",
+      "mae": 9.986018625895182,
+      "gross_eur": 82.82994736842105,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 56.822052631578934,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -25.31347098238411,
+      "oracle_margin_eur": 56.93047368421051
+    },
+    {
+      "day": "2026-05-09",
+      "mae": 14.21910530726115,
+      "gross_eur": 139.6878157894737,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 113.67992105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 31.54439743866854,
+      "oracle_margin_eur": 113.70518421052631
+    },
+    {
+      "day": "2026-05-10",
+      "mae": 12.23031811396281,
+      "gross_eur": 125.1076842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 99.0997894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 16.964265859721152,
+      "oracle_margin_eur": 99.0997894736842
+    },
+    {
+      "day": "2026-05-11",
+      "mae": 12.157702242533366,
+      "gross_eur": 51.115710526315766,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": -0.9000789473684279,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -83.03560256133147,
+      "oracle_margin_eur": 3.896447368421036
+    },
+    {
+      "day": "2026-05-12",
+      "mae": 8.743118279774986,
+      "gross_eur": 105.10678947368419,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 79.0988947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -3.036628877120947,
+      "oracle_margin_eur": 88.02731578947368
+    },
+    {
+      "day": "2026-05-13",
+      "mae": 9.750880482991539,
+      "gross_eur": 109.1146263157895,
+      "variable_cost_eur": 49.415,
+      "margin_eur": 59.6996263157895,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -22.435897298173543,
+      "oracle_margin_eur": 62.6386052631579
+    },
+    {
+      "day": "2026-05-14",
+      "mae": 12.363028717041017,
+      "gross_eur": 137.77486842105262,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 111.76697368421051,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 29.631450070247467,
+      "oracle_margin_eur": 113.4294736842105
+    },
+    {
+      "day": "2026-05-15",
+      "mae": 7.839113311767577,
+      "gross_eur": 90.10068421052634,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 64.09278947368422,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -18.042734140278824,
+      "oracle_margin_eur": 77.49805263157896
+    },
+    {
+      "day": "2026-05-16",
+      "mae": 8.196898899078368,
+      "gross_eur": 135.5891842105263,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 109.58128947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 27.445765859721163,
+      "oracle_margin_eur": 109.93497368421052
+    },
+    {
+      "day": "2026-05-17",
+      "mae": 11.737210693359375,
+      "gross_eur": 147.23315789473682,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 121.22526315789474,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 39.0897395439317,
+      "oracle_margin_eur": 122.80765789473685
+    },
+    {
+      "day": "2026-05-18",
+      "mae": 13.12915175120036,
+      "gross_eur": 157.26257894736835,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 105.24678947368417,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 23.11126585972113,
+      "oracle_margin_eur": 112.44394736842102
+    },
+    {
+      "day": "2026-05-19",
+      "mae": 7.493473027547197,
+      "gross_eur": 93.59499999999998,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 67.5871052631579,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -14.54841835080515,
+      "oracle_margin_eur": 68.785
+    },
+    {
+      "day": "2026-05-20",
+      "mae": 15.480074501037597,
+      "gross_eur": 113.36505263157892,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 87.3571578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 5.221634280773756,
+      "oracle_margin_eur": 97.03294736842102
+    },
+    {
+      "day": "2026-05-21",
+      "mae": 15.994051742553708,
+      "gross_eur": 186.55552631578945,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 160.54763157894735,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 78.4121079649843,
+      "oracle_margin_eur": 160.54763157894735
+    },
+    {
+      "day": "2026-05-22",
+      "mae": 15.517275174458822,
+      "gross_eur": 207.50744736842105,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 181.49955263157895,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 99.3640290176159,
+      "oracle_margin_eur": 181.49955263157895
+    },
+    {
+      "day": "2026-05-23",
+      "mae": 9.887715326944985,
+      "gross_eur": 197.8782105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 171.8703157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 89.73479217551065,
+      "oracle_margin_eur": 171.8703157894737
+    },
+    {
+      "day": "2026-05-24",
+      "mae": 14.398861223856606,
+      "gross_eur": 209.9626842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 183.9547894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 101.81926585972116,
+      "oracle_margin_eur": 198.00376315789472
+    },
+    {
+      "day": "2026-05-25",
+      "mae": 10.73086166381836,
+      "gross_eur": 194.18997368421054,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 168.18207894736844,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 86.0465553334054,
+      "oracle_margin_eur": 168.18207894736844
+    },
+    {
+      "day": "2026-05-26",
+      "mae": 20.71006373087565,
+      "gross_eur": 209.50934210526316,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 183.50144736842103,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 101.36592375445798,
+      "oracle_margin_eur": 183.60565789473682
+    },
+    {
+      "day": "2026-05-27",
+      "mae": 15.481864134470625,
+      "gross_eur": 150.5817894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 124.5738947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 42.43837112287906,
+      "oracle_margin_eur": 125.42981578947371
+    },
+    {
+      "day": "2026-05-28",
+      "mae": 33.39766272226969,
+      "gross_eur": 374.25247368421054,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 348.2445789473684,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 266.1090553334053,
+      "oracle_margin_eur": 348.24457894736844
+    },
+    {
+      "day": "2026-05-29",
+      "mae": 13.921897137959798,
+      "gross_eur": 228.6173947368421,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 202.6095,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 120.47397638603695,
+      "oracle_margin_eur": 202.63265789473687
+    },
+    {
+      "day": "2026-05-30",
+      "mae": 9.518572762807208,
+      "gross_eur": 153.93715789473683,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 127.92926315789474,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 45.79373954393169,
+      "oracle_margin_eur": 138.69276315789472
+    },
+    {
+      "day": "2026-05-31",
+      "mae": 19.746314284006754,
+      "gross_eur": 145.13252631578945,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 119.12463157894736,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 36.98910796498431,
+      "oracle_margin_eur": 122.24063157894736
+    },
+    {
+      "day": "2026-06-01",
+      "mae": 19.351882705688478,
+      "gross_eur": 268.1832894736842,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 216.1675,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 134.03197638603694,
+      "oracle_margin_eur": 222.06757894736842
+    },
+    {
+      "day": "2026-06-02",
+      "mae": 4.525667991638183,
+      "gross_eur": 73.89913157894735,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 47.89123684210525,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -34.244286771857794,
+      "oracle_margin_eur": 48.555105263157884
+    },
+    {
+      "day": "2026-06-03",
+      "mae": 15.264354337056476,
+      "gross_eur": 97.93221052631579,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 71.92431578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -10.211207824489364,
+      "oracle_margin_eur": 73.07694736842103
+    },
+    {
+      "day": "2026-06-04",
+      "mae": 13.151709435780845,
+      "gross_eur": 112.11252631578947,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 86.10463157894735,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 3.9691079649843033,
+      "oracle_margin_eur": 86.1056842105263
+    },
+    {
+      "day": "2026-06-05",
+      "mae": 6.816000626881916,
+      "gross_eur": 134.88178947368422,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 108.87389473684212,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 26.738371122879073,
+      "oracle_margin_eur": 127.43573684210526
+    },
+    {
+      "day": "2026-06-06",
+      "mae": 16.067648194630937,
+      "gross_eur": 144.84007894736843,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 118.83218421052632,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 36.69666059656328,
+      "oracle_margin_eur": 118.8321842105263
+    },
+    {
+      "day": "2026-06-07",
+      "mae": 21.351336739857988,
+      "gross_eur": 176.45142105263156,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 150.44352631578946,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 68.30800270182641,
+      "oracle_margin_eur": 154.34681578947368
+    },
+    {
+      "day": "2026-06-08",
+      "mae": 12.025299809773765,
+      "gross_eur": 138.91289473684208,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 112.90499999999997,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 30.769476386036928,
+      "oracle_margin_eur": 115.02184210526315
+    },
+    {
+      "day": "2026-06-09",
+      "mae": 21.183600006103514,
+      "gross_eur": 142.6835,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 116.67560526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 34.540081649194846,
+      "oracle_margin_eur": 122.156
+    },
+    {
+      "day": "2026-06-10",
+      "mae": 11.156301625569661,
+      "gross_eur": 128.24836842105262,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 102.24047368421051,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.10495007024747,
+      "oracle_margin_eur": 104.67415789473682
+    },
+    {
+      "day": "2026-06-11",
+      "mae": 12.108613433837888,
+      "gross_eur": 131.42963157894738,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 105.4217368421053,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 23.28621322814226,
+      "oracle_margin_eur": 105.42173684210528
+    },
+    {
+      "day": "2026-06-12",
+      "mae": 10.210189221700032,
+      "gross_eur": 42.034368421052626,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 16.026473684210515,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -66.10904992975253,
+      "oracle_margin_eur": 24.61386842105263
+    },
+    {
+      "day": "2026-06-13",
+      "mae": 20.885806490580244,
+      "gross_eur": 144.8255,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 118.81760526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 36.68208164919484,
+      "oracle_margin_eur": 119.55023684210528
+    },
+    {
+      "day": "2026-06-14",
+      "mae": 23.077141869862874,
+      "gross_eur": 132.45547368421052,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 106.44757894736841,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 24.312055333405368,
+      "oracle_margin_eur": 106.8075789473684
+    },
+    {
+      "day": "2026-06-15",
+      "mae": 22.149909343719482,
+      "gross_eur": 149.63331578947367,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 123.62542105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 41.48989743866852,
+      "oracle_margin_eur": 125.34226315789473
+    },
+    {
+      "day": "2026-06-16",
+      "mae": 15.58724391937256,
+      "gross_eur": 111.6244736842105,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 85.61657894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 3.4810553334053793,
+      "oracle_margin_eur": 92.5705789473684
+    },
+    {
+      "day": "2026-06-17",
+      "mae": 6.284635098775229,
+      "gross_eur": 87.81049999999998,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 61.80260526315786,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -20.332918350805187,
+      "oracle_margin_eur": 63.44610526315789
+    },
+    {
+      "day": "2026-06-18",
+      "mae": 33.91113089879354,
+      "gross_eur": 392.90281578947366,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 366.8949210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 284.75939743866843,
+      "oracle_margin_eur": 373.39292105263155
+    },
+    {
+      "day": "2026-06-19",
+      "mae": 6.991023921966556,
+      "gross_eur": 178.92673684210524,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 152.91884210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 70.78331849130012,
+      "oracle_margin_eur": 153.05673684210527
+    },
+    {
+      "day": "2026-06-20",
+      "mae": 8.968246415456138,
+      "gross_eur": 173.43407894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 147.42618421052634,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 65.2906605965633,
+      "oracle_margin_eur": 147.4346052631579
+    },
+    {
+      "day": "2026-06-21",
+      "mae": 5.720338179270427,
+      "gross_eur": 142.51052631578946,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 116.50263157894737,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 34.36710796498433,
+      "oracle_margin_eur": 116.75913157894738
+    },
+    {
+      "day": "2026-06-22",
+      "mae": 18.33903256734212,
+      "gross_eur": 223.15205263157893,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 197.14415789473682,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 115.00863428077378,
+      "oracle_margin_eur": 197.38521052631575
+    },
+    {
+      "day": "2026-06-23",
+      "mae": 48.2264253616333,
+      "gross_eur": 453.9397631578947,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 427.9318684210525,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 345.79634480708944,
+      "oracle_margin_eur": 427.9844999999999
+    },
+    {
+      "day": "2026-06-24",
+      "mae": 64.33740173339844,
+      "gross_eur": 557.4405789473684,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 531.4326842105263,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 449.29716059656323,
+      "oracle_margin_eur": 531.539
+    },
+    {
+      "day": "2026-06-25",
+      "mae": 16.866088320414228,
+      "gross_eur": 235.38571052631576,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 209.37781578947366,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 127.24229217551061,
+      "oracle_margin_eur": 209.37781578947366
+    },
+    {
+      "day": "2026-06-26",
+      "mae": 21.838457825978594,
+      "gross_eur": 292.2527894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 266.244894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 184.10937112287897,
+      "oracle_margin_eur": 266.24489473684207
+    },
+    {
+      "day": "2026-06-27",
+      "mae": 9.429886322021483,
+      "gross_eur": 210.1032894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 184.0953947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 101.95987112287906,
+      "oracle_margin_eur": 184.09539473684208
+    },
+    {
+      "day": "2026-06-28",
+      "mae": 9.45281976699829,
+      "gross_eur": 145.6452105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 119.63731578947367,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 37.50179217551063,
+      "oracle_margin_eur": 127.8453684210526
+    },
+    {
+      "day": "2026-06-29",
+      "mae": 20.65608113606771,
+      "gross_eur": 178.08297368421051,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 152.0750789473684,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 69.93955533340537,
+      "oracle_margin_eur": 176.19382631578947
+    },
+    {
+      "day": "2026-06-30",
+      "mae": 45.71092309316,
+      "gross_eur": 374.51360526315784,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 348.5057105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 266.37018691235266,
+      "oracle_margin_eur": 355.4054736842105
+    },
+    {
+      "day": "2026-07-01",
+      "mae": 17.5185789235433,
+      "gross_eur": 114.01392105263155,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 88.00602631578944,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 5.870502701826396,
+      "oracle_margin_eur": 115.2651578947368
+    },
+    {
+      "day": "2026-07-02",
+      "mae": 27.843518288930255,
+      "gross_eur": 115.07242105263157,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 89.06452631578948,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 6.929002701826434,
+      "oracle_margin_eur": 97.59973684210527
+    },
+    {
+      "day": "2026-07-03",
+      "mae": 14.198035449981688,
+      "gross_eur": 128.6242894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 102.6163947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.48087112287905,
+      "oracle_margin_eur": 108.16634210526314
+    },
+    {
+      "day": "2026-07-04",
+      "mae": 15.92218495686849,
+      "gross_eur": 127.49955263157894,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 101.49165789473685,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 19.3561342807738,
+      "oracle_margin_eur": 109.1063947368421
+    },
+    {
+      "day": "2026-07-05",
+      "mae": 11.760377165476479,
+      "gross_eur": 134.11128947368417,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 108.10339473684208,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 25.967871122879032,
+      "oracle_margin_eur": 108.10339473684206
+    },
+    {
+      "day": "2026-07-06",
+      "mae": 14.856596425374349,
+      "gross_eur": 132.1936842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 106.1857894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 24.05026585972115,
+      "oracle_margin_eur": 111.86263157894737
+    },
+    {
+      "day": "2026-07-07",
+      "mae": 15.033284473419188,
+      "gross_eur": 115.4557894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 89.4478947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 7.312371122879057,
+      "oracle_margin_eur": 91.68989473684209
+    },
+    {
+      "day": "2026-07-08",
+      "mae": 10.22790657043457,
+      "gross_eur": 144.07426315789473,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 118.06636842105263,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 35.930844807089585,
+      "oracle_margin_eur": 118.06636842105263
+    },
+    {
+      "day": "2026-07-09",
+      "mae": 10.469877821604411,
+      "gross_eur": 154.83131578947368,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 128.82342105263155,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 46.6878974386685,
+      "oracle_margin_eur": 136.04397368421053
+    },
+    {
+      "day": "2026-07-10",
+      "mae": 9.519016240437827,
+      "gross_eur": 137.6417894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 111.63389473684212,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 29.498371122879078,
+      "oracle_margin_eur": 111.63389473684211
+    },
+    {
+      "day": "2026-07-11",
+      "mae": 10.653898442586264,
+      "gross_eur": 149.3273157894737,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 123.31942105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 41.183897438668524,
+      "oracle_margin_eur": 123.55521052631579
+    },
+    {
+      "day": "2026-07-12",
+      "mae": 10.854289315541584,
+      "gross_eur": 147.9233947368421,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 121.91550000000001,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 39.779976386036964,
+      "oracle_margin_eur": 122.88086842105264
+    },
+    {
+      "day": "2026-07-13",
+      "mae": 9.917253036499023,
+      "gross_eur": 138.62473684210528,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 112.61684210526316,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 30.481318491300115,
+      "oracle_margin_eur": 112.61684210526317
+    },
+    {
+      "day": "2026-07-14",
+      "mae": 8.555821393330893,
+      "gross_eur": 118.18652631578948,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 92.17863157894736,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 10.043107964984316,
+      "oracle_margin_eur": 92.17863157894737
+    },
+    {
+      "day": "2026-07-15",
+      "mae": 13.501091931660968,
+      "gross_eur": 128.80521052631576,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 102.79731578947366,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.661792175510612,
+      "oracle_margin_eur": 103.36994736842104
+    },
+    {
+      "day": "2026-07-16",
+      "mae": 14.340820236206051,
+      "gross_eur": 195.5139210526316,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 169.50602631578943,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 87.37050270182638,
+      "oracle_margin_eur": 177.25444736842104
+    },
+    {
+      "day": "2026-07-17",
+      "mae": 13.256299107869461,
+      "gross_eur": 47.72386842105259,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 21.7159736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -60.41954992975255,
+      "oracle_margin_eur": 29.116473684210526
+    },
+    {
+      "day": "2026-07-18",
+      "mae": 19.679262638092037,
+      "gross_eur": 147.0327894736842,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 121.0248947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 38.889371122879055,
+      "oracle_margin_eur": 121.83331578947369
+    },
+    {
+      "day": "2026-07-19",
+      "mae": 15.85609893163045,
+      "gross_eur": 147.4022631578947,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 121.39436842105263,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 39.25884480708959,
+      "oracle_margin_eur": 121.44705263157894
+    },
+    {
+      "day": "2026-07-20",
+      "mae": 25.806887677510577,
+      "gross_eur": 170.72349999999997,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 144.71560526315787,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 62.580081649194824,
+      "oracle_margin_eur": 144.72402631578947
+    },
+    {
+      "day": "2026-07-21",
+      "mae": 23.35370988210043,
+      "gross_eur": 164.77831578947368,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 138.77042105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 56.63489743866853,
+      "oracle_margin_eur": 138.77042105263158
+    },
+    {
+      "day": "2026-07-22",
+      "mae": 18.03622538884481,
+      "gross_eur": 153.1941052631579,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 127.18621052631579,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 45.050686912352745,
+      "oracle_margin_eur": 127.57357894736842
+    },
+    {
+      "day": "2026-07-23",
+      "mae": 14.975598322550455,
+      "gross_eur": 175.31636842105263,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 149.30847368421055,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 67.17295007024751,
+      "oracle_margin_eur": 154.48894736842107
+    },
+    {
+      "day": "2026-07-24",
+      "mae": 17.407025032043453,
+      "gross_eur": 181.67589473684208,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 155.66799999999998,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 73.53247638603693,
+      "oracle_margin_eur": 159.3509736842105
+    },
+    {
+      "day": "2026-07-25",
+      "mae": 19.199146086374917,
+      "gross_eur": 173.30705263157896,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 147.29915789473688,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 65.16363428077383,
+      "oracle_margin_eur": 148.46765789473685
+    },
+    {
+      "day": "2026-07-26",
+      "mae": 9.933981494903565,
+      "gross_eur": 143.71931578947368,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 117.71142105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 35.575897438668534,
+      "oracle_margin_eur": 118.97336842105264
+    },
+    {
+      "day": "2026-07-27",
+      "mae": 37.57142817179362,
+      "gross_eur": 222.41552631578944,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 170.3997368421052,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 88.26421322814215,
+      "oracle_margin_eur": 176.20731578947365
+    },
+    {
+      "day": "2026-07-28",
+      "mae": 18.592052427927655,
+      "gross_eur": 206.01042105263153,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 180.00252631578945,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 97.86700270182641,
+      "oracle_margin_eur": 180.00252631578942
+    },
+    {
+      "day": "2026-07-29",
+      "mae": 18.910701707204186,
+      "gross_eur": 250.49065789473684,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 224.4827631578947,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 142.34723954393166,
+      "oracle_margin_eur": 224.49960526315786
+    },
+    {
+      "day": "2026-07-30",
+      "mae": 11.824590841929117,
+      "gross_eur": 173.97871052631578,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 147.97081578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 65.83529217551063,
+      "oracle_margin_eur": 167.47271052631578
+    },
+    {
+      "day": "2026-07-31",
+      "mae": 8.129277674357093,
+      "gross_eur": 95.13247368421054,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 69.12457894736845,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -13.010944666594597,
+      "oracle_margin_eur": 71.8795789473684
+    },
+    {
+      "day": "2026-08-01",
+      "mae": 12.867392196655276,
+      "gross_eur": 171.86884210526316,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 145.86094736842108,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 63.725423754458035,
+      "oracle_margin_eur": 145.86094736842105
+    },
+    {
+      "day": "2026-08-02",
+      "mae": 12.459695955912272,
+      "gross_eur": 178.49392105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 152.48602631578947,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 70.35050270182643,
+      "oracle_margin_eur": 154.11971052631577
+    },
+    {
+      "day": "2026-08-03",
+      "mae": 10.565727380116778,
+      "gross_eur": 167.53860526315788,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 141.5307105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 59.395186912352756,
+      "oracle_margin_eur": 151.57150000000001
+    },
+    {
+      "day": "2026-08-04",
+      "mae": 7.223239771525063,
+      "gross_eur": 146.71581578947365,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 120.70792105263156,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 38.57239743866852,
+      "oracle_margin_eur": 120.70792105263155
+    },
+    {
+      "day": "2026-08-05",
+      "mae": 28.52008096694946,
+      "gross_eur": 178.27647368421054,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 152.2685789473684,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 70.13305533340537,
+      "oracle_margin_eur": 168.0714210526316
+    },
+    {
+      "day": "2026-08-06",
+      "mae": 17.851071885426837,
+      "gross_eur": 155.97971052631578,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 129.97181578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 47.836292175510636,
+      "oracle_margin_eur": 136.39381578947368
+    },
+    {
+      "day": "2026-08-07",
+      "mae": 18.833586273193358,
+      "gross_eur": 166.24926315789475,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 140.24136842105264,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 58.105844807089596,
+      "oracle_margin_eur": 145.04978947368423
+    },
+    {
+      "day": "2026-08-08",
+      "mae": 15.879221827189127,
+      "gross_eur": 187.127,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 161.11910526315788,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 78.98358164919483,
+      "oracle_margin_eur": 162.08752631578946
+    },
+    {
+      "day": "2026-08-09",
+      "mae": 4.959268747965496,
+      "gross_eur": 169.7718157894737,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 143.76392105263156,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 61.628397438668514,
+      "oracle_margin_eur": 146.3691842105263
+    },
+    {
+      "day": "2026-08-10",
+      "mae": 10.219666570027668,
+      "gross_eur": 163.02881578947367,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 137.02092105263156,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 54.88539743866852,
+      "oracle_margin_eur": 141.37192105263156
+    },
+    {
+      "day": "2026-08-11",
+      "mae": 19.606555805206302,
+      "gross_eur": 189.13521052631577,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 163.12731578947367,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 80.99179217551062,
+      "oracle_margin_eur": 163.12731578947367
+    },
+    {
+      "day": "2026-08-12",
+      "mae": 24.53949140548706,
+      "gross_eur": 280.2605526315789,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 254.25265789473673,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 172.11713428077368,
+      "oracle_margin_eur": 254.27581578947365
+    },
+    {
+      "day": "2026-08-13",
+      "mae": 26.867207724253333,
+      "gross_eur": 321.6517368421052,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 295.6438421052631,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 213.50831849130006,
+      "oracle_margin_eur": 295.6438421052631
+    },
+    {
+      "day": "2026-08-14",
+      "mae": 12.664355208079021,
+      "gross_eur": 241.14244736842105,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 215.13455263157894,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 132.9990290176159,
+      "oracle_margin_eur": 215.13455263157894
+    },
+    {
+      "day": "2026-08-15",
+      "mae": 8.79148847579956,
+      "gross_eur": 171.54155263157895,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 145.53365789473685,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 63.3981342807738,
+      "oracle_margin_eur": 148.32102631578948
+    },
+    {
+      "day": "2026-08-16",
+      "mae": 17.07667966206869,
+      "gross_eur": 122.03373684210526,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 96.02584210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 13.890318491300121,
+      "oracle_margin_eur": 140.45563157894736
+    },
+    {
+      "day": "2026-08-17",
+      "mae": 10.347843068440756,
+      "gross_eur": 45.57105263157892,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 19.56315789473683,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -62.57236571922621,
+      "oracle_margin_eur": 34.05055263157894
+    },
+    {
+      "day": "2026-08-18",
+      "mae": 9.889520441691081,
+      "gross_eur": 52.76947368421051,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 26.761578947368434,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -55.37394466659461,
+      "oracle_margin_eur": 27.483928947368412
+    },
+    {
+      "day": "2026-08-19",
+      "mae": 9.591498591105141,
+      "gross_eur": 63.200657894736835,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 37.19276315789473,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -44.942760456068314,
+      "oracle_margin_eur": 40.18863157894731
+    },
+    {
+      "day": "2026-08-20",
+      "mae": 16.99548365275065,
+      "gross_eur": 118.07842105263158,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 92.07052631578948,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 9.935002701826434,
+      "oracle_margin_eur": 96.8957894736842
+    },
+    {
+      "day": "2026-08-21",
+      "mae": 9.02227306365967,
+      "gross_eur": 46.36710526315787,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 20.359210526315792,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -61.77631308764725,
+      "oracle_margin_eur": 25.478473684210485
+    },
+    {
+      "day": "2026-08-22",
+      "mae": 17.071906312306723,
+      "gross_eur": 155.96252631578946,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 129.95463157894736,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 47.81910796498431,
+      "oracle_margin_eur": 133.8778947368421
+    },
+    {
+      "day": "2026-08-23",
+      "mae": 13.468954188028972,
+      "gross_eur": 174.20434210526315,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 148.19644736842108,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 66.06092375445803,
+      "oracle_margin_eur": 155.76971052631578
+    },
+    {
+      "day": "2026-08-24",
+      "mae": 25.15911257425944,
+      "gross_eur": 209.58718421052626,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 157.57139473684208,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 75.43587112287904,
+      "oracle_margin_eur": 160.75771052631575
+    },
+    {
+      "day": "2026-08-25",
+      "mae": 8.850292383829753,
+      "gross_eur": 128.74089473684208,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 102.73299999999998,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 20.59747638603693,
+      "oracle_margin_eur": 106.83134210526313
+    },
+    {
+      "day": "2026-08-26",
+      "mae": 7.444059333801268,
+      "gross_eur": 134.24102631578944,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 82.22523684210523,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 0.08971322814218752,
+      "oracle_margin_eur": 82.23786842105258
+    },
+    {
+      "day": "2026-08-27",
+      "mae": 16.9864777247111,
+      "gross_eur": 203.84052631578942,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 151.82473684210524,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 69.6892132281422,
+      "oracle_margin_eur": 155.57121052631575
+    },
+    {
+      "day": "2026-08-28",
+      "mae": 22.41914426167806,
+      "gross_eur": 58.127736842105236,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 32.119842105263146,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -50.0156815086999,
+      "oracle_margin_eur": 39.801500000000004
+    },
+    {
+      "day": "2026-08-29",
+      "mae": 17.431729316711426,
+      "gross_eur": 186.8325789473684,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 160.82468421052633,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 78.68916059656328,
+      "oracle_margin_eur": 164.91360526315788
+    },
+    {
+      "day": "2026-08-30",
+      "mae": 11.985898831685383,
+      "gross_eur": 183.78947368421052,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 157.78157894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 75.64605533340537,
+      "oracle_margin_eur": 158.64684210526318
+    },
+    {
+      "day": "2026-08-31",
+      "mae": 30.652693106333416,
+      "gross_eur": 181.20228947368417,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 129.18650000000002,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 47.05097638603698,
+      "oracle_margin_eur": 154.7603947368421
+    },
+    {
+      "day": "2026-09-01",
+      "mae": 13.643846899668377,
+      "gross_eur": 228.76723684210523,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 176.751447368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 94.61592375445795,
+      "oracle_margin_eur": 182.91671052631574
+    },
+    {
+      "day": "2026-09-02",
+      "mae": 7.266957562764483,
+      "gross_eur": 168.96576315789463,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 116.94997368421045,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 34.8144500702474,
+      "oracle_margin_eur": 121.08247368421044
+    },
+    {
+      "day": "2026-09-03",
+      "mae": 11.611610787709553,
+      "gross_eur": 168.29684210526318,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 142.28894736842108,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 60.15342375445803,
+      "oracle_margin_eur": 148.57368421052627
+    },
+    {
+      "day": "2026-09-04",
+      "mae": 35.63767223993938,
+      "gross_eur": 164.63426315789474,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 112.61847368421053,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 30.482950070247483,
+      "oracle_margin_eur": 113.70876315789471
+    },
+    {
+      "day": "2026-09-05",
+      "mae": 18.72116704940796,
+      "gross_eur": 115.20523684210525,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 89.19734210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 7.061818491300102,
+      "oracle_margin_eur": 104.01418421052631
+    },
+    {
+      "day": "2026-09-06",
+      "mae": 23.160351161956786,
+      "gross_eur": 212.5526052631579,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 186.5447105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 104.40918691235277,
+      "oracle_margin_eur": 191.9312105263158
+    },
+    {
+      "day": "2026-09-07",
+      "mae": 22.106513608296712,
+      "gross_eur": 246.64950000000002,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 194.63371052631578,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 112.49818691235274,
+      "oracle_margin_eur": 195.00423684210529
+    },
+    {
+      "day": "2026-09-08",
+      "mae": 21.316764144897462,
+      "gross_eur": 296.4546578947368,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 244.4388684210526,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 162.30334480708956,
+      "oracle_margin_eur": 244.81781578947368
+    },
+    {
+      "day": "2026-09-09",
+      "mae": 18.44635342915853,
+      "gross_eur": 165.03844736842103,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 113.02265789473685,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 30.887134280773807,
+      "oracle_margin_eur": 119.33086842105263
+    },
+    {
+      "day": "2026-09-10",
+      "mae": 33.54388790130615,
+      "gross_eur": 384.1875263157894,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 332.17173684210525,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 250.0362132281422,
+      "oracle_margin_eur": 369.55260526315783
+    },
+    {
+      "day": "2026-09-11",
+      "mae": 16.618544438680015,
+      "gross_eur": 172.85902631578944,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 120.84323684210526,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 38.70771322814221,
+      "oracle_margin_eur": 141.56910526315787
+    },
+    {
+      "day": "2026-09-12",
+      "mae": 27.797600434621174,
+      "gross_eur": 193.38813157894737,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 167.38023684210526,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 85.24471322814222,
+      "oracle_margin_eur": 173.90523684210527
+    },
+    {
+      "day": "2026-09-13",
+      "mae": 26.133442808787027,
+      "gross_eur": 116.29792105263155,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 90.29002631578946,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 8.154502701826416,
+      "oracle_margin_eur": 93.91902631578945
+    },
+    {
+      "day": "2026-09-14",
+      "mae": 45.51900454203287,
+      "gross_eur": 599.5384736842104,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 547.5226842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 465.38716059656315,
+      "oracle_margin_eur": 547.7584736842105
+    },
+    {
+      "day": "2026-09-15",
+      "mae": 16.92607761383056,
+      "gross_eur": 309.15749999999997,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 257.1417105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 175.00618691235266,
+      "oracle_margin_eur": 259.1006578947368
+    },
+    {
+      "day": "2026-09-16",
+      "mae": 10.684277788798015,
+      "gross_eur": 186.86973684210523,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 134.85394736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 52.718423754458,
+      "oracle_margin_eur": 135.17605263157893
+    },
+    {
+      "day": "2026-09-17",
+      "mae": 14.920146954854332,
+      "gross_eur": 233.18884210526312,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 181.17305263157897,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 99.03752901761592,
+      "oracle_margin_eur": 183.04581578947364
+    },
+    {
+      "day": "2026-09-18",
+      "mae": 34.91727423985799,
+      "gross_eur": 248.88828947368415,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 196.87249999999997,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 114.73697638603693,
+      "oracle_margin_eur": 197.60513157894735
+    },
+    {
+      "day": "2026-09-19",
+      "mae": 27.017009874979653,
+      "gross_eur": 110.42421052631578,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 84.41631578947367,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 2.2807921755106264,
+      "oracle_margin_eur": 90.46152631578947
+    },
+    {
+      "day": "2026-09-20",
+      "mae": 27.66549253463745,
+      "gross_eur": 82.60697368421053,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 56.59907894736841,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -25.536444666594633,
+      "oracle_margin_eur": 58.38960526315789
+    },
+    {
+      "day": "2026-09-21",
+      "mae": 18.650258992513024,
+      "gross_eur": 352.901947368421,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 300.8861578947368,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 218.75063428077377,
+      "oracle_margin_eur": 307.077
+    },
+    {
+      "day": "2026-09-22",
+      "mae": 28.24855723063151,
+      "gross_eur": 539.2158684210525,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 487.20007894736824,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 405.0645553334052,
+      "oracle_margin_eur": 487.2000789473684
+    },
+    {
+      "day": "2026-09-23",
+      "mae": 34.00142321268718,
+      "gross_eur": 338.5159736842104,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 286.5001842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 204.36466059656314,
+      "oracle_margin_eur": 287.51071052631573
+    },
+    {
+      "day": "2026-09-24",
+      "mae": 14.705078016916909,
+      "gross_eur": 280.61899999999997,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 228.60321052631582,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 146.46768691235278,
+      "oracle_margin_eur": 241.65234210526313
+    },
+    {
+      "day": "2026-09-25",
+      "mae": 22.048948351542155,
+      "gross_eur": 327.67586842105254,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 275.66007894736833,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 193.5245553334053,
+      "oracle_margin_eur": 277.33481578947357
+    },
+    {
+      "day": "2026-09-26",
+      "mae": 9.118764419555664,
+      "gross_eur": 207.1241842105263,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 181.1162894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 98.98076585972115,
+      "oracle_margin_eur": 194.65839473684207
+    },
+    {
+      "day": "2026-09-27",
+      "mae": 16.493145332336425,
+      "gross_eur": 187.0203947368421,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 161.0125,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 78.87697638603694,
+      "oracle_margin_eur": 162.51881578947365
+    },
+    {
+      "day": "2026-09-28",
+      "mae": 11.924768511454262,
+      "gross_eur": 264.7304999999999,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 212.7147105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 130.57918691235267,
+      "oracle_margin_eur": 216.17884210526313
+    },
+    {
+      "day": "2026-09-29",
+      "mae": 13.451539204915369,
+      "gross_eur": 177.0742631578947,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 125.0584736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 42.92295007024745,
+      "oracle_margin_eur": 137.9047894736842
+    },
+    {
+      "day": "2026-09-30",
+      "mae": 24.834907824198407,
+      "gross_eur": 294.5911842105263,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 242.5753947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 160.43987112287905,
+      "oracle_margin_eur": 244.12065789473684
+    },
+    {
+      "day": "2026-10-01",
+      "mae": 9.992189280192056,
+      "gross_eur": 183.2552105263158,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 131.23942105263157,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 49.103897438668525,
+      "oracle_margin_eur": 134.1246842105263
+    },
+    {
+      "day": "2026-10-02",
+      "mae": 14.812843221028649,
+      "gross_eur": 234.12776315789466,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 182.11197368421045,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 99.97645007024741,
+      "oracle_margin_eur": 185.86447368421048
+    },
+    {
+      "day": "2026-10-03",
+      "mae": 7.983151766459149,
+      "gross_eur": 162.67134210526316,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 136.66344736842106,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 54.527923754458016,
+      "oracle_margin_eur": 138.13081578947367
+    },
+    {
+      "day": "2026-10-04",
+      "mae": 16.898311920166016,
+      "gross_eur": 171.1302894736842,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 145.1223947368421,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 62.98687112287905,
+      "oracle_margin_eur": 147.34134210526315
+    },
+    {
+      "day": "2026-10-05",
+      "mae": 25.096658617655436,
+      "gross_eur": 257.5385526315789,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 205.52276315789473,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 123.38723954393168,
+      "oracle_margin_eur": 239.31342105263155
+    },
+    {
+      "day": "2026-10-06",
+      "mae": 16.290830459594726,
+      "gross_eur": 306.11189473684203,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 254.0961052631578,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 171.96058164919475,
+      "oracle_margin_eur": 256.2655789473684
+    },
+    {
+      "day": "2026-10-07",
+      "mae": 10.784456087748211,
+      "gross_eur": 162.765,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 110.7492105263158,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 28.61368691235276,
+      "oracle_margin_eur": 124.54784210526316
+    },
+    {
+      "day": "2026-10-08",
+      "mae": 13.806256167093913,
+      "gross_eur": 105.56902631578947,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 53.553236842105264,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -28.58228677185778,
+      "oracle_margin_eur": 54.7658684210526
+    },
+    {
+      "day": "2026-10-09",
+      "mae": 24.574386940002437,
+      "gross_eur": 147.5316578947368,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 95.51586842105262,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 13.380344807089571,
+      "oracle_margin_eur": 103.98976315789471
+    },
+    {
+      "day": "2026-10-10",
+      "mae": 15.85545939127604,
+      "gross_eur": 193.76763157894737,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 141.75184210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 59.61631849130012,
+      "oracle_margin_eur": 144.32552631578943
+    },
+    {
+      "day": "2026-10-11",
+      "mae": 16.92584637959798,
+      "gross_eur": 218.13652631578944,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 166.12073684210523,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 83.98521322814219,
+      "oracle_margin_eur": 180.13734210526312
+    },
+    {
+      "day": "2026-10-12",
+      "mae": 14.574219614664713,
+      "gross_eur": 193.5735789473684,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 141.55778947368424,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 59.42226585972119,
+      "oracle_margin_eur": 141.6862105263158
+    },
+    {
+      "day": "2026-10-13",
+      "mae": 9.2436158879598,
+      "gross_eur": 94.56431578947365,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 42.54852631578947,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -39.58699729817357,
+      "oracle_margin_eur": 56.05707894736841
+    },
+    {
+      "day": "2026-10-14",
+      "mae": 17.931482734680177,
+      "gross_eur": 281.9413421052632,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 229.9255526315789,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 147.79002901761586,
+      "oracle_margin_eur": 231.98239473684202
+    },
+    {
+      "day": "2026-10-15",
+      "mae": 13.021702728271483,
+      "gross_eur": 194.7602368421052,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 142.74444736842105,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 60.608923754458004,
+      "oracle_margin_eur": 160.12744736842097
+    },
+    {
+      "day": "2026-10-16",
+      "mae": 21.788932393391928,
+      "gross_eur": 138.66849999999994,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 86.65271052631576,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 4.517186912352713,
+      "oracle_margin_eur": 90.56113157894731
+    },
+    {
+      "day": "2026-10-17",
+      "mae": 12.114361063639327,
+      "gross_eur": 96.09192105263159,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 70.08402631578949,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -12.051497298173558,
+      "oracle_margin_eur": 70.08402631578949
+    },
+    {
+      "day": "2026-10-18",
+      "mae": 7.010348434448244,
+      "gross_eur": 58.93631578947368,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 32.92842105263159,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -49.20710256133145,
+      "oracle_margin_eur": 40.22334210526316
+    },
+    {
+      "day": "2026-10-19",
+      "mae": 22.452505620320636,
+      "gross_eur": 159.51263157894732,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 107.49684210526317,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 25.361318491300125,
+      "oracle_margin_eur": 110.37684210526317
+    },
+    {
+      "day": "2026-10-20",
+      "mae": 18.590477472941085,
+      "gross_eur": 143.57410526315783,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 91.5583157894736,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 9.422792175510551,
+      "oracle_margin_eur": 92.26463157894727
+    },
+    {
+      "day": "2026-10-21",
+      "mae": 14.121595815022786,
+      "gross_eur": 49.18199999999999,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 23.174105263157912,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -58.96141835080513,
+      "oracle_margin_eur": 59.710289473684156
+    },
+    {
+      "day": "2026-10-22",
+      "mae": 29.033748232523603,
+      "gross_eur": 252.07265789473675,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 200.05686842105257,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 117.92134480708953,
+      "oracle_margin_eur": 202.38634210526314
+    },
+    {
+      "day": "2026-10-23",
+      "mae": 33.158433799743655,
+      "gross_eur": 31.35226315789473,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 5.344368421052636,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -76.79115519291041,
+      "oracle_margin_eur": 9.882263157894755
+    },
+    {
+      "day": "2026-10-24",
+      "mae": 31.775196304321287,
+      "gross_eur": 115.66215789473682,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 63.6463684210526,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -18.489155192910445,
+      "oracle_margin_eur": 67.93884210526315
+    },
+    {
+      "day": "2026-10-26",
+      "mae": 19.282579142252608,
+      "gross_eur": 243.2445526315789,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 191.2287631578947,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 109.09323954393165,
+      "oracle_margin_eur": 231.22513157894736
+    },
+    {
+      "day": "2026-10-27",
+      "mae": 29.023763262430823,
+      "gross_eur": 231.5742894736842,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 179.55849999999998,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 97.42297638603694,
+      "oracle_margin_eur": 223.10455263157894
+    },
+    {
+      "day": "2026-10-28",
+      "mae": 29.041105728149414,
+      "gross_eur": 182.14005263157884,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 130.1242631578946,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 47.98873954393156,
+      "oracle_margin_eur": 137.53128947368413
+    },
+    {
+      "day": "2026-10-29",
+      "mae": 39.908879572550454,
+      "gross_eur": 268.2798157894737,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 216.2640263157894,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 134.12850270182636,
+      "oracle_margin_eur": 330.43568421052635
+    },
+    {
+      "day": "2026-10-30",
+      "mae": 23.746109390258784,
+      "gross_eur": 144.11789473684206,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 92.1021052631578,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 9.966581649194751,
+      "oracle_margin_eur": 115.27842105263153
+    },
+    {
+      "day": "2026-10-31",
+      "mae": 12.182566528320308,
+      "gross_eur": 49.08149999999998,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 23.073605263157845,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -59.0619183508052,
+      "oracle_margin_eur": 25.665184210526313
+    },
+    {
+      "day": "2026-11-01",
+      "mae": 11.9263185373942,
+      "gross_eur": 34.28642105263157,
+      "variable_cost_eur": 26.007894736842108,
+      "margin_eur": 8.278526315789463,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -73.85699729817358,
+      "oracle_margin_eur": 10.564605263157858
+    },
+    {
+      "day": "2026-11-02",
+      "mae": 12.030569508870448,
+      "gross_eur": 140.75239473684212,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 88.73660526315783,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 6.601081649194782,
+      "oracle_margin_eur": 96.41378947368412
+    },
+    {
+      "day": "2026-11-03",
+      "mae": 11.815082041422526,
+      "gross_eur": 100.52063157894739,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 48.50484210526315,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -33.630681508699894,
+      "oracle_margin_eur": 64.23042105263153
+    },
+    {
+      "day": "2026-11-04",
+      "mae": 11.333722661336262,
+      "gross_eur": 109.63768421052629,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 57.62189473684208,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -24.513628877120965,
+      "oracle_margin_eur": 74.30428947368424
+    },
+    {
+      "day": "2026-11-05",
+      "mae": 23.83445940653483,
+      "gross_eur": 182.98976315789466,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 130.97397368421042,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 48.838450070247376,
+      "oracle_margin_eur": 137.57397368421047
+    },
+    {
+      "day": "2026-11-06",
+      "mae": 11.939281158447265,
+      "gross_eur": 166.25081578947362,
+      "variable_cost_eur": 52.015789473684215,
+      "margin_eur": 114.23502631578941,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 32.09950270182637,
+      "oracle_margin_eur": 120.4362631578947
+    },
+    {
+      "day": "2026-11-07",
+      "mae": 13.708619232177739,
+      "gross_eur": 63.09578947368418,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 37.08789473684205,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -45.04762887712099,
+      "oracle_margin_eur": 43.12697368421047
+    },
+    {
+      "day": "2026-11-08",
+      "mae": 26.508230412801108,
+      "gross_eur": 74.70144736842099,
+      "variable_cost_eur": 26.007894736842104,
+      "margin_eur": 48.69355263157888,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": -33.44197098238416,
+      "oracle_margin_eur": 52.643342105263116
+    },
+    {
+      "day": "2026-11-09",
+      "mae": 75.69023523966472,
+      "gross_eur": 351.5670789473684,
+      "variable_cost_eur": 52.01578947368421,
+      "margin_eur": 299.5512894736842,
+      "fixed_cost_eur": 82.13552361396304,
+      "scenario_net_eur": 217.41576585972118,
+      "oracle_margin_eur": 373.47339473684195
+    }
+  ]
+}

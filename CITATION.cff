@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this research artifact if you use its code, checkpoint or recorded experiments."
+title: "Chronos-2 for German day-ahead electricity price forecasting"
+type: software
+authors:
+  - family-names: Sudhir
+    given-names: Aryan
+date-released: 2026-11-15
+version: 1.0.0
+license: Apache-2.0
+repository-code: "https://github.com/AryanSudhirDev/chronos-2-de-lu-pregate"
+url: "https://huggingface.co/AryanSudhirDev/chronos-2-de-lu-pregate"
+abstract: "A fine-tuned Chronos-2 checkpoint and time-ordered electricity forecasting research workflow with separate post-auction and pre-auction input evaluations."

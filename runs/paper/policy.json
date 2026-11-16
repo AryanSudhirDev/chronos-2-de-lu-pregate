@@ -1,0 +1,16 @@
+{
+  "target_scored_days": 30,
+  "start_delivery_day": "2026-11-11",
+  "candidate": "pregate_lora",
+  "references": [
+    "pregate_lear",
+    "pregate_lgbm",
+    "naive"
+  ],
+  "adapter": "runs/ckpt/offline_chronos_vftxarhg/fit/finetuned-ckpt",
+  "adapter_sha256": "01fe7c491f30f3bbcb1265d3bbd53db226b5f0cfe3769d0519b94679462c48b5",
+  "calibration_sha256": "b31f52fcad40dc9c0460b433f707b34663f9778c608b65a5da596d32d1d30808",
+  "dev_protocol_sha256": "e452300745e2a748df38e093d62799581b7df905f892db2c372bcd01cf88c234",
+  "stop_rule": "first review after 30 scored paper days; no live trading authorized",
+  "reporting": "daily MAE, interval coverage and constrained battery margin under illustrative assumptions; no parameter selection on this stream"
+}

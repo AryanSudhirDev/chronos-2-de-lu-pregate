@@ -1,0 +1,28 @@
+{
+  "scope": "Retrospective decision audit of the already-opened holdout; no new model evaluation or fitting",
+  "forecast_id": "15830042bf",
+  "archive_label": "pregate",
+  "start": "2025-11-01",
+  "end": "2026-11-09",
+  "policy": "Use existing dev-readiness battery dispatch and its base cost assumptions without selecting settings on this replay",
+  "battery": {
+    "capacity_mwh": 1.0,
+    "power_mw": 1.0,
+    "eta": 0.95,
+    "steps": 10,
+    "max_cycles": 2,
+    "fee_slippage_eur_mwh": 3.0,
+    "wear_eur_mwh": 20.0
+  },
+  "annual_fixed_eur": 30000.0,
+  "dst": "Exclude 23/25-hour Berlin delivery days; no interpolated hours may enter the execution replay",
+  "separation": "OS-isolated worker receives only one day's saved forecast; persist every decision and its hashes before scorer reads price_de outcomes",
+  "limits": [
+    "Forecasts and decisions are historical simulations created now, not timestamped live orders",
+    "The original holdout has already been inspected; this is a retrospective diagnostic with no parameter selection",
+    "Source publication/revision vintages and foundation-model pretraining provenance are not independently proven",
+    "Hourly averaged prices are a proxy for actual quarter-hour products; full fills at the average are an assumption",
+    "Costs are illustrative; taxes, outages, imbalance risk and actual execution are excluded",
+    "Pre-gate mapping fits historically used past post-gate TSO forecasts as labels, not current-day post-gate inputs"
+  ]
+}

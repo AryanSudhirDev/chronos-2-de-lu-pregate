@@ -1,0 +1,243 @@
+{
+  "protocol": {
+    "created_utc": "2026-11-10T01:45:00Z",
+    "scope": "new dev-only readiness study, historical holdout unchanged; future paper predictions separate",
+    "evaluate_start": "2025-07-01",
+    "evaluate_end": "2025-10-31",
+    "calibration_end": "2025-06-30",
+    "lora": "864e91aa35",
+    "lear_windows": [
+      56,
+      84,
+      728,
+      1092
+    ],
+    "lgbm": {
+      "objective": "l1",
+      "n_estimators": 1500,
+      "learning_rate": 0.03,
+      "num_leaves": 63,
+      "min_child_samples": 50,
+      "subsample": 0.8,
+      "subsample_freq": 1,
+      "colsample_bytree": 0.7,
+      "reg_lambda": 1.0,
+      "verbose": -1,
+      "n_jobs": 4
+    },
+    "primary": "MAE on common dev days; no tuning on original held-out outcomes",
+    "paper": "frozen pre-gate LoRA adapter from offline_chronos_vftxarhg; dev-only interval expansion; pre-gate LEAR/LightGBM references; immutable issues before D-1 noon Europe/Berlin"
+  },
+  "coverage80_raw": 0.7107046070460704,
+  "coverage80_calibrated": 0.8357046070460704,
+  "mean_width_raw": 29.62000274658203,
+  "mean_width_calibrated": 38.9524707161508,
+  "models": [
+    {
+      "name": "pregate_lora",
+      "mae": 12.148337399707577,
+      "dm_p_better_than_lear": 4.1461315985813485e-05,
+      "economics": {
+        "gross_eur": 16684.804213157895,
+        "variable_cost_eur": 4278.298684210514,
+        "margin_eur": 12406.505528947382,
+        "fixed_cost_eur": 0.0,
+        "scenario_net_eur": 12406.505528947382,
+        "oracle_margin_eur": 13321.230692105264,
+        "grid_turnover_mwh": 329.4328947368423,
+        "discharged_mwh": 164.5,
+        "assumptions": {
+          "capacity_mwh": 1.0,
+          "power_mw": 1.0,
+          "eta": 0.95,
+          "steps": 10,
+          "max_cycles": 2,
+          "fee_slippage_eur_mwh": 3.0,
+          "wear_eur_mwh": 20.0
+        },
+        "annual_fixed_eur": 0.0
+      }
+    },
+    {
+      "name": "pregate_lgbm",
+      "mae": 12.690625654288025,
+      "dm_p_better_than_lear": 0.0001099399783890398,
+      "economics": {
+        "gross_eur": 16680.34760789474,
+        "variable_cost_eur": 4538.377631578935,
+        "margin_eur": 12141.969976315804,
+        "fixed_cost_eur": 0.0,
+        "scenario_net_eur": 12141.969976315804,
+        "oracle_margin_eur": 13321.230692105264,
+        "grid_turnover_mwh": 349.45921052631576,
+        "discharged_mwh": 174.50000000000003,
+        "assumptions": {
+          "capacity_mwh": 1.0,
+          "power_mw": 1.0,
+          "eta": 0.95,
+          "steps": 10,
+          "max_cycles": 2,
+          "fee_slippage_eur_mwh": 3.0,
+          "wear_eur_mwh": 20.0
+        },
+        "annual_fixed_eur": 0.0
+      }
+    },
+    {
+      "name": "pregate_lear",
+      "mae": 14.395102674760137,
+      "dm_p_better_than_lear": null,
+      "economics": {
+        "gross_eur": 16240.60423947369,
+        "variable_cost_eur": 4712.6305263157765,
+        "margin_eur": 11527.973713157913,
+        "fixed_cost_eur": 0.0,
+        "scenario_net_eur": 11527.973713157913,
+        "oracle_margin_eur": 13321.230692105264,
+        "grid_turnover_mwh": 362.8768421052631,
+        "discharged_mwh": 181.20000000000005,
+        "assumptions": {
+          "capacity_mwh": 1.0,
+          "power_mw": 1.0,
+          "eta": 0.95,
+          "steps": 10,
+          "max_cycles": 2,
+          "fee_slippage_eur_mwh": 3.0,
+          "wear_eur_mwh": 20.0
+        },
+        "annual_fixed_eur": 0.0
+      }
+    },
+    {
+      "name": "naive",
+      "mae": 26.843853319783197,
+      "dm_p_better_than_lear": 0.99999999999881,
+      "economics": {
+        "gross_eur": 16205.655728947366,
+        "variable_cost_eur": 4546.179999999988,
+        "margin_eur": 11659.475728947378,
+        "fixed_cost_eur": 0.0,
+        "scenario_net_eur": 11659.475728947378,
+        "oracle_margin_eur": 13321.230692105264,
+        "grid_turnover_mwh": 350.05999999999995,
+        "discharged_mwh": 174.8,
+        "assumptions": {
+          "capacity_mwh": 1.0,
+          "power_mw": 1.0,
+          "eta": 0.95,
+          "steps": 10,
+          "max_cycles": 2,
+          "fee_slippage_eur_mwh": 3.0,
+          "wear_eur_mwh": 20.0
+        },
+        "annual_fixed_eur": 0.0
+      }
+    }
+  ],
+  "reference_trial_ids": {
+    "pregate_lgbm": "d89d09c3c9",
+    "pregate_lear": "c6d2f0377c"
+  },
+  "lora_cost_sensitivity": [
+    {
+      "gross_eur": 17577.551213157898,
+      "variable_cost_eur": 0.0,
+      "margin_eur": 17577.551213157898,
+      "fixed_cost_eur": 0.0,
+      "scenario_net_eur": 17577.551213157898,
+      "oracle_margin_eur": 18486.96184473684,
+      "grid_turnover_mwh": 442.38131578947304,
+      "discharged_mwh": 220.9,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "power_mw": 1.0,
+        "eta": 0.95,
+        "steps": 10,
+        "max_cycles": 2,
+        "fee_slippage_eur_mwh": 0,
+        "wear_eur_mwh": 0
+      },
+      "annual_fixed_eur": 0
+    },
+    {
+      "gross_eur": 16684.804213157895,
+      "variable_cost_eur": 4278.298684210514,
+      "margin_eur": 12406.505528947382,
+      "fixed_cost_eur": 0.0,
+      "scenario_net_eur": 12406.505528947382,
+      "oracle_margin_eur": 13321.230692105264,
+      "grid_turnover_mwh": 329.4328947368423,
+      "discharged_mwh": 164.5,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "power_mw": 1.0,
+        "eta": 0.95,
+        "steps": 10,
+        "max_cycles": 2,
+        "fee_slippage_eur_mwh": 3,
+        "wear_eur_mwh": 20
+      },
+      "annual_fixed_eur": 0
+    },
+    {
+      "gross_eur": 16684.804213157895,
+      "variable_cost_eur": 4278.298684210514,
+      "margin_eur": 12406.505528947382,
+      "fixed_cost_eur": 5051.334702258727,
+      "scenario_net_eur": 7355.170826688655,
+      "oracle_margin_eur": 13321.230692105264,
+      "grid_turnover_mwh": 329.4328947368423,
+      "discharged_mwh": 164.5,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "power_mw": 1.0,
+        "eta": 0.95,
+        "steps": 10,
+        "max_cycles": 2,
+        "fee_slippage_eur_mwh": 3,
+        "wear_eur_mwh": 20
+      },
+      "annual_fixed_eur": 15000
+    },
+    {
+      "gross_eur": 16684.804213157895,
+      "variable_cost_eur": 4278.298684210514,
+      "margin_eur": 12406.505528947382,
+      "fixed_cost_eur": 10102.669404517454,
+      "scenario_net_eur": 2303.8361244299285,
+      "oracle_margin_eur": 13321.230692105264,
+      "grid_turnover_mwh": 329.4328947368423,
+      "discharged_mwh": 164.5,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "power_mw": 1.0,
+        "eta": 0.95,
+        "steps": 10,
+        "max_cycles": 2,
+        "fee_slippage_eur_mwh": 3,
+        "wear_eur_mwh": 20
+      },
+      "annual_fixed_eur": 30000
+    },
+    {
+      "gross_eur": 14112.855160526316,
+      "variable_cost_eur": 5851.776315789461,
+      "margin_eur": 8261.078844736856,
+      "fixed_cost_eur": 10102.669404517454,
+      "scenario_net_eur": -1841.5905597805977,
+      "oracle_margin_eur": 9449.49968947368,
+      "grid_turnover_mwh": 225.29605263157887,
+      "discharged_mwh": 112.50000000000001,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "power_mw": 1.0,
+        "eta": 0.95,
+        "steps": 10,
+        "max_cycles": 2,
+        "fee_slippage_eur_mwh": 6,
+        "wear_eur_mwh": 40
+      },
+      "annual_fixed_eur": 30000
+    }
+  ]
+}

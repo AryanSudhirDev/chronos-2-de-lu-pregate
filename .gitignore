@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+data/
+model/
+exports/
+example_input.json
+forecast.json
+.env
+.env.*
+*.pem
+*.key
+runs/ckpt/
+runs/paper/*.lock

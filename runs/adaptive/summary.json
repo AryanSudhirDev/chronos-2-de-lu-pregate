@@ -1,0 +1,60 @@
+{
+  "adaptive": {
+    "economics": {
+      "annual_fixed_eur": 0.0,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "eta": 0.95,
+        "fee_slippage_eur_mwh": 3.0,
+        "max_cycles": 2,
+        "power_mw": 1.0,
+        "steps": 10,
+        "wear_eur_mwh": 20.0
+      },
+      "discharged_mwh": 168.60000000000002,
+      "fixed_cost_eur": 0.0,
+      "grid_turnover_mwh": 337.6436842105264,
+      "gross_eur": 16786.81503421052,
+      "margin_eur": 12401.883981578952,
+      "oracle_margin_eur": 13321.230692105264,
+      "scenario_net_eur": 12401.883981578952,
+      "variable_cost_eur": 4384.931052631566
+    },
+    "mae": 11.753450195582266
+  },
+  "base": {
+    "economics": {
+      "annual_fixed_eur": 0.0,
+      "assumptions": {
+        "capacity_mwh": 1.0,
+        "eta": 0.95,
+        "fee_slippage_eur_mwh": 3.0,
+        "max_cycles": 2,
+        "power_mw": 1.0,
+        "steps": 10,
+        "wear_eur_mwh": 20.0
+      },
+      "discharged_mwh": 164.5,
+      "fixed_cost_eur": 0.0,
+      "grid_turnover_mwh": 329.4328947368423,
+      "gross_eur": 16684.804213157895,
+      "margin_eur": 12406.505528947382,
+      "oracle_margin_eur": 13321.230692105264,
+      "scenario_net_eur": 12406.505528947382,
+      "variable_cost_eur": 4278.298684210514
+    },
+    "mae": 12.148337399707577
+  },
+  "decision": "retain frozen control; do not add this challenger",
+  "dev_gate_passed": false,
+  "mae_improvement_fraction": 0.032505452485606545,
+  "n_days": 123,
+  "protocol_sha256": "eac61fd83fadf54bd0531034e836045f144277782e0d8745220ac7dcb9b0d0c5",
+  "scope": "One new dev trial after holdout inspection. No new unseen result. Small correction weights, not continual core Chronos training.",
+  "source_forecast_sha256": "a5f758af785b428a6ac5197879b11b2d8534bd8f909fb3724dfe721959ccc2fe",
+  "variable_margin_change_eur": -4.621547368429674,
+  "window": [
+    "2025-07-01",
+    "2025-10-31"
+  ]
+}

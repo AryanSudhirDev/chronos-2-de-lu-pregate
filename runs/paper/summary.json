@@ -1,0 +1,23 @@
+{
+  "n_scored_days": 5,
+  "n_issued_days": 6,
+  "models": {
+    "naive": {
+      "mae": 75.28691666666667,
+      "margin_eur": 225.5131421052629
+    },
+    "pregate_lear": {
+      "mae": 20.11690942495658,
+      "margin_eur": 306.0280789473683
+    },
+    "pregate_lgbm": {
+      "mae": 41.58818219146987,
+      "margin_eur": 343.36949999999985
+    },
+    "pregate_lora": {
+      "mae": 22.36311051686605,
+      "margin_eur": 320.89352631578925
+    }
+  },
+  "coverage80": 0.8
+}
